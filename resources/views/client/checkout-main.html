@@ -1,0 +1,1505 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="shortcut icon" href="./assets/img/fav-desert.png" type="image/png" />
+
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="fonts/Europa Regular (1).ttf" />
+        <link rel="stylesheet" href="./assets/fonts/Adventium.ttf" />
+
+        <!-- bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+        <!-- font awsome cdn -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css" />
+
+        <title>Desert safari-dubai</title>
+        <style>
+            .header-video__responsive-wrapper iframe,
+            .header-video__responsive-wrapper object {
+                height: 577px;
+                left: 50%;
+                position: relative;
+                top: 4px;
+                transform: translateX(-50%);
+                width: 1385.77px;
+            }
+            /* @media only screen and (min-width: 768px)
+{
+.header-video__responsive-wrapper embed, .header-video__responsive-wrapper iframe, .header-video__responsive-wrapper object {
+    height: 100%;
+    width: 100%;
+}
+} */
+            /* navbar start */
+            @media screen and (min-width: 768px) {
+                body {
+                    margin: 0;
+                }
+                .nav {
+                    height: calc(var(--header-height) + 1.5rem);
+                }
+                .nav__link {
+                    color: var(--white-color);
+                    text-transform: initial;
+                }
+                .nav__link:hover {
+                    color: var(--white-color);
+                }
+                .nav__dark {
+                    position: initial;
+                }
+                .nav__menu {
+                    display: flex;
+                    column-gap: 1rem;
+                }
+                .nav__list {
+                    flex-direction: row;
+                    column-gap: 2rem;
+                }
+                .nav__toggle,
+                .nav__close {
+                    display: none;
+                }
+                .change-theme-name {
+                    display: none;
+                }
+                .change-theme {
+                    color: var(--white-color);
+                }
+                .active-link::before {
+                    background-color: var(--white-color);
+                }
+                .scroll-header .nav__link {
+                    color: var(--text-color);
+                }
+                .scroll-header .active-link {
+                    color: var(--title-color);
+                }
+                .scroll-header .active-link::before {
+                    background-color: var(--title-color);
+                }
+                .scroll-header .change-theme {
+                    color: var(--text-color);
+                }
+                .section {
+                    padding: 7rem 0 2rem;
+                }
+                .home__container {
+                    height: 100vh;
+                    grid-template-rows: 1.8fr 0.5fr;
+                }
+                .home__data {
+                    align-self: flex-end;
+                }
+                .home__social {
+                    flex-direction: row;
+                    align-self: flex-end;
+                    margin-bottom: 3rem;
+                    column-gap: 2.5rem;
+                }
+                .home__info {
+                    bottom: 3rem;
+                }
+                .about__container {
+                    grid-template-columns: repeat(3, 1fr);
+                    align-items: center;
+                }
+                .about__data,
+                .about__title {
+                    text-align: initial;
+                }
+                .about__title {
+                    margin-bottom: var(--mb-1-5);
+                }
+                .about__description {
+                    margin-bottom: var(--mb-2);
+                }
+                .discover__container {
+                    width: 610px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                .discover__container,
+                .place__container {
+                    padding-top: 2rem;
+                }
+                .experience__overlay:nth-child(1) {
+                    width: 363px;
+                    margin-right: 4rem;
+                }
+                .experience__overlay:nth-child(2) {
+                    width: 160px;
+                }
+                .subscribe__bg {
+                    background: none;
+                    padding: 0;
+                }
+                .subscribe__container {
+                    background-color: var(--first-color-second);
+                    padding: 3.5rem 0;
+                }
+                .subscribe__input {
+                    padding: 0 0.5rem;
+                }
+                .footer__rights {
+                    flex-direction: row;
+                    justify-content: space-around;
+                }
+            }
+            /* navbar end */
+            /* second modal popup */
+            /*remodal.min.css*/
+            .remodal-is-locked {
+                overflow: hidden;
+                -ms-touch-action: none;
+                touch-action: none;
+            }
+            .remodal,
+            [data-remodal-id] {
+                display: none;
+            }
+            .remodal-overlay {
+                position: fixed;
+                z-index: 9999;
+                top: -5000px;
+                right: -5000px;
+                bottom: -5000px;
+                left: -5000px;
+                display: none;
+            }
+            .remodal-wrapper {
+                position: fixed;
+                z-index: 10000;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                display: none;
+                overflow: auto;
+                text-align: center;
+                -webkit-overflow-scrolling: touch;
+            }
+            .remodal-wrapper:after {
+                display: inline-block;
+                height: 100%;
+                margin-left: -0.05em;
+                content: "";
+            }
+            .remodal-overlay,
+            .remodal-wrapper {
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+            }
+            .remodal {
+                position: relative;
+                outline: 0;
+                -webkit-text-size-adjust: 100%;
+                -ms-text-size-adjust: 100%;
+                text-size-adjust: 100%;
+            }
+            .remodal-is-initialized {
+                display: inline-block;
+            } /*# sourceMappingURL=remodal.min.css.map */
+            /*remodal-default-theme.min.css*/
+            .remodal-bg.remodal-is-opened,
+            .remodal-bg.remodal-is-opening {
+                -webkit-filter: blur(3px);
+                filter: blur(3px);
+            }
+            .remodal-overlay {
+                background: rgba(43, 46, 56, 0.9);
+            }
+            .remodal-overlay.remodal-is-closing,
+            .remodal-overlay.remodal-is-opening {
+                -webkit-animation-duration: 0.3s;
+                animation-duration: 0.3s;
+                -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+            }
+            .remodal-overlay.remodal-is-opening {
+                -webkit-animation-name: remodal-overlay-opening-keyframes;
+                animation-name: remodal-overlay-opening-keyframes;
+            }
+            .remodal-overlay.remodal-is-closing {
+                -webkit-animation-name: remodal-overlay-closing-keyframes;
+                animation-name: remodal-overlay-closing-keyframes;
+            }
+            .remodal-wrapper {
+                padding: 10px 10px 0;
+            }
+            .remodal {
+                box-sizing: border-box;
+                width: 100%;
+                margin-bottom: 10px;
+                padding: 35px;
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+                color: #2b2e38;
+                background: #fff;
+            }
+            .remodal-close,
+            .remodal-close:before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+                width: 35px;
+            }
+            .remodal-cancel,
+            .remodal-close,
+            .remodal-confirm {
+                overflow: visible;
+                margin: 0;
+                cursor: pointer;
+                text-decoration: none;
+                outline: 0;
+                border: 0;
+            }
+            .remodal.remodal-is-closing,
+            .remodal.remodal-is-opening {
+                -webkit-animation-duration: 0.3s;
+                animation-duration: 0.3s;
+                -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+            }
+            .remodal.remodal-is-opening {
+                -webkit-animation-name: remodal-opening-keyframes;
+                animation-name: remodal-opening-keyframes;
+            }
+            .remodal.remodal-is-closing {
+                -webkit-animation-name: remodal-closing-keyframes;
+                animation-name: remodal-closing-keyframes;
+            }
+            .remodal,
+            .remodal-wrapper:after {
+                vertical-align: middle;
+            }
+            .remodal-close {
+                height: 35px;
+                padding: 0;
+                -webkit-transition: color 0.2s;
+                transition: color 0.2s;
+                color: #95979c;
+                background: 0 0;
+                position: absolute;
+                left: 820px;
+                top: 8px;
+            }
+            .remodal-close:focus,
+            .remodal-close:hover {
+                color: #2b2e38;
+            }
+            .remodal-close:before {
+                font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif !important;
+                font-size: 25px;
+                line-height: 35px;
+                content: "\00d7";
+                text-align: center;
+            }
+            .remodal-cancel,
+            .remodal-confirm {
+                font: inherit;
+                display: inline-block;
+                min-width: 110px;
+                padding: 12px 0;
+                -webkit-transition: background 0.2s;
+                transition: background 0.2s;
+                text-align: center;
+                vertical-align: middle;
+            }
+            .remodal-confirm {
+                color: #fff;
+                background: #81c784;
+            }
+            .remodal-confirm:focus,
+            .remodal-confirm:hover {
+                background: #66bb6a;
+            }
+            .remodal-cancel {
+                color: #fff;
+                background: #e57373;
+            }
+            .remodal-cancel:focus,
+            .remodal-cancel:hover {
+                background: #ef5350;
+            }
+            .remodal-cancel::-moz-focus-inner,
+            .remodal-close::-moz-focus-inner,
+            .remodal-confirm::-moz-focus-inner {
+                padding: 0;
+                border: 0;
+            }
+            @-webkit-keyframes remodal-opening-keyframes {
+                from {
+                    -webkit-transform: scale(1.05);
+                    transform: scale(1.05);
+                    opacity: 0;
+                }
+                to {
+                    -webkit-transform: none;
+                    transform: none;
+                    opacity: 1;
+                    -webkit-filter: blur(0);
+                    filter: blur(0);
+                }
+            }
+            @keyframes remodal-opening-keyframes {
+                from {
+                    -webkit-transform: scale(1.05);
+                    transform: scale(1.05);
+                    opacity: 0;
+                }
+                to {
+                    -webkit-transform: none;
+                    transform: none;
+                    opacity: 1;
+                    -webkit-filter: blur(0);
+                    filter: blur(0);
+                }
+            }
+            @-webkit-keyframes remodal-closing-keyframes {
+                from {
+                    -webkit-transform: scale(1);
+                    transform: scale(1);
+                    opacity: 1;
+                }
+                to {
+                    -webkit-transform: scale(0.95);
+                    transform: scale(0.95);
+                    opacity: 0;
+                    -webkit-filter: blur(0);
+                    filter: blur(0);
+                }
+            }
+            @keyframes remodal-closing-keyframes {
+                from {
+                    -webkit-transform: scale(1);
+                    transform: scale(1);
+                    opacity: 1;
+                }
+                to {
+                    -webkit-transform: scale(0.95);
+                    transform: scale(0.95);
+                    opacity: 0;
+                    -webkit-filter: blur(0);
+                    filter: blur(0);
+                }
+            }
+            @-webkit-keyframes remodal-overlay-opening-keyframes {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+            @keyframes remodal-overlay-opening-keyframes {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+            @-webkit-keyframes remodal-overlay-closing-keyframes {
+                from {
+                    opacity: 1;
+                }
+                to {
+                    opacity: 0;
+                }
+            }
+            @keyframes remodal-overlay-closing-keyframes {
+                from {
+                    opacity: 1;
+                }
+                to {
+                    opacity: 0;
+                }
+            }
+
+            @media only screen and (min-width: 641px) {
+                .remodal {
+                    max-width: 870px;
+                }
+            }
+            .lt-ie9 .remodal-overlay {
+                background: #2b2e38;
+            }
+            .lt-ie9 .remodal {
+                width: 700px;
+            } /*# sourceMappingURL=remodal-default-theme.min.css.map */
+
+            @media (min-width: 1024px) and (max-width: 1199px) {
+                .icrement__modal__menu {
+                    position: relative;
+                    left: 25%;
+                }
+                .input__modal_number {
+                    position: relative;
+                    left: 17%;
+                }
+            }
+
+            @media (min-width: 768px) and (max-width: 992px) {
+                .remodal {
+                    max-width: 690px !important;
+                }
+                .remodal-close {
+                    position: absolute;
+                    left: 640px;
+                    top: 8px;
+                }
+            }
+            @media (min-width: 576px) and (max-width: 767px) {
+                .remodal {
+                    max-width: 546px;
+                }
+                .remodal-close {
+                    position: absolute;
+                    left: 475px;
+                    top: 8px;
+                }
+            }
+            /* second modal popup */
+        </style>
+    </head>
+    <body>
+        <div class="top__menu">
+            <div class="top__menu__container" style="background: #0e0d0d;">
+                <div class="top__menu__sub_c epp__desk">
+                    <div class="typ">
+                        <img src="./assets/img/fav-desert.png" class="nav__logo" style="width: 25px;" />
+                    </div>
+
+                    <div class="top__menu__titles">
+                        <span class="tp__head">ABOUT US</span>
+                    </div>
+                    <div class="top__menu__titles">
+                        <span class="tp__head">FAQ</span>
+                    </div>
+                    <div class="top__menu__titles">
+                        <span class="tp__head">BLOGS</span>
+                    </div>
+                    <div>
+                        <ul class="ert" style="margin-bottom: 0px;">
+                            <li class="lipp">
+                                <i class="bx bxl-facebook tp__sc"></i>
+                            </li>
+                            <li class="lipp">
+                                <i class="bx bxl-instagram tp__sc"></i>
+                            </li>
+                            <li class="lipp">
+                                <i class="bx bxl-whatsapp tp__sc"></i>
+                            </li>
+                            <li class="lipp">
+                                <i class="bx bxl-youtube tp__sc"></i>
+                            </li>
+                            <li class="lipp">
+                                <i class="bx bxl-twitter tp__sc"></i>
+                            </li>
+                            <li class="lipp">
+                                <i class="bx bxl-tiktok tp__sc"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="top__menu__sub_c epp__mob">
+                    <div class="typ">
+                        <img src="./assets/img/fav-desert.png" class="nav__logo" style="width: 25px;" />
+                    </div>
+                </div>
+
+                <!-- new nav section start -->
+
+                <!-- new nav section end -->
+
+                <div class="vgb">
+                    <a href="#"><span class="tp__head">CART</span></a>
+                    <a href="account.html"><span class="tp__head">MY ACCOUNT</span></a>
+                </div>
+            </div>
+        </div>
+
+        <header class="header">
+            <nav class="nav container">
+                <a href="index.html" class="nav__logo banner__logo-sec"><img src="./logo-deserts.png" alt="logo" /></a>
+                <a href="index.html" class="nav__logo banner__logo-sec logo__mobile"><img src="./logo-vertical.png" alt="logo" /></a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link">Home</a>
+                        </li>
+                        <li class="nav__item dropdown">
+                            <a href="services.html" class="nav__link">Quad Bike</a>
+                            <ul class="dropdown-content">
+                                <li>
+                                    <a href="quad-bike.html">1 Seater Quad Bike</a>
+                                    <a href="quad-bike__twoSeater.html">2 Seater Quad Bike</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item dropdown">
+                            <a href="#" class="nav__link">Dune Buggy</a>
+                            <ul class="dropdown-content">
+                                <li>
+                                    <a href="">1 Seater Dune Buggy</a>
+                                    <a href="">2 Seater Dune Buggy</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item dropdown">
+                            <a href="#" class="nav__link">Raptor</a>
+                            <ul class="dropdown-content">
+                                <li>
+                                    <a href="">1 Seater Raptor</a>
+                                    <a href="">Ktm Motocross</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Desert Safari</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Tours</a>
+                        </li>
+                    </ul>
+                    <!-- mobile-section navbar -->
+                    <div class="top-menu-main">
+                        <div class="top__menu__titles top-menu-title1">
+                            <span class="tp__head top-head-text">ABOUT US</span>
+                        </div>
+                        <div class="top__menu__titles top-menu-title1">
+                            <span class="tp__head top-head-text">FAQ</span>
+                        </div>
+                        <div class="top__menu__titles top-menu-title1">
+                            <span class="tp__head top-head-text">BLOGS</span>
+                        </div>
+                        <div class="top-menu-socialmedia">
+                            <ul class="ert" style="padding-left: 0px;">
+                                <li class="lipp">
+                                    <i class="bx bxl-facebook tp__sc top-social-media"></i>
+                                </li>
+                                <li class="lipp">
+                                    <i class="bx bxl-instagram tp__sc top-social-media"></i>
+                                </li>
+                                <li class="lipp">
+                                    <i class="bx bxl-whatsapp tp__sc top-social-media"></i>
+                                </li>
+                                <li class="lipp">
+                                    <i class="bx bxl-youtube tp__sc top-social-media"></i>
+                                </li>
+                                <li class="lipp">
+                                    <i class="bx bxl-twitter tp__sc top-social-media"></i>
+                                </li>
+                                <li class="lipp">
+                                    <i class="bx bxl-tiktok tp__sc top-social-media"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- mobile-section navbar -->
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="bx bx-x"></i>
+                    </div>
+                </div>
+
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="bx bx-grid-alt"></i>
+                </div>
+            </nav>
+        </header>
+        <main class="main">
+            <section id="bg-image" style="padding-top: 140px; padding-bottom: 50px; background-image: url(./assets/img/anas.png); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
+                <div class="container">
+                    <div class="row">
+                        <div class="secure-checkout_page">
+                            <h3>
+                                Secure Checkout
+                            </h3>
+                            <p class="secure-checkout">Checkout securely - it takes only a few minutes.</p>
+                            <a style="color: #000; background: #ffffff; padding: 10px; padding-left: 22px; padding-right: 44px; font-weight: 600; position: relative;" href="#modal">
+                                Addons <i style="font-size: 16px; font-weight: 600; position: absolute; left: 85px; bottom: 10px;" class="fa-solid fa-plus"></i>
+                            </a>
+                            <a style="color: #000; background: #ffffff; padding: 10px; padding-left: 22px; padding-right: 40px; font-weight: 600; position: relative; left: 10px;" href="#modal1">
+                                Pickup And Drop <i style="font-size: 16px; font-weight: 600; position: absolute; left: 146px; bottom: 10px;" class="fa-solid fa-plus"></i>
+                            </a>
+
+                            <!-- modal popup content -->
+
+                            <div style="border-radius: 20px; background: #000000;" class="remodal" data-remodal-id="modal" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+                                <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                               
+                                <div class="" style="margin-top: 15px;">
+                                    <div class="review-orders" style="height: 400px; overflow: scroll; overflow-x: hidden;">
+                                        <div class="order-sections"></div>
+                                        <!-- 1st card -->
+
+                                        <div class="main-card">
+                                            <div class="card-body-1">
+                                                <div class="left-order-sec">
+                                                    <img style="border-radius: 22px; max-width: 120px; height: auto;" src="./assets/img/quad-bike/quad-bike1-small.png" alt="" />
+                                                </div>
+                                                <div class="right_modal-sec1">
+                                                    <div class="right__text-sec1">
+                                                        <p>
+                                                            Polaris 1000CC 4Seater Buggy <br />
+                                                            Rental in an open Desert Safari
+                                                        </p>
+                                                        <p>Price <span style="font-weight: 600;">₹ 1250</span></p>
+                                                        <!-- quantity section -->
+                                                        <div class="product-quantity" style="text-align: left;">
+                                                            <!-- <h3>Quantity</h3> -->
+                                                            <input class="input__modal_number" data-min="1" data-max="0" type="text" name="quantity" value="1" readonly="true" />
+                                                            <div class="quantity-selectors-container">
+                                                                <div class="quantity-selectors">
+                                                                    <button type="button" class="decrement-quantity substract__modal__menu" aria-label="Subtract one" data-direction="-1" disabled="disabled">
+                                                                        <span style="position: relative; bottom: 4px;">&#8722;</span>
+                                                                    </button>
+                                                                    <button type="button" class="increment-quantity icrement__modal__menu" aria-label="Add one" data-direction="1">
+                                                                        <span style="position: relative; bottom: 5px;">&#43;</span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- quantity section -->
+                                                    </div>
+                                                </div>
+
+                                                <div class="total__modal-sec1 addon__modal__sec">
+                                                    <p>Total</p>
+                                                    <p style="font-size: 15px; font-weight: 600;">₹ 1250</p>
+                                                    <a href="">Add</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 1st card -->
+                                        <!-- second -->
+                                        <div class="main-card">
+                                            <div class="card-body-1">
+                                                <div class="left-order-sec">
+                                                    <img style="border-radius: 22px; max-width: 120px; height: auto;" src="./assets/img/quad-bike/quad-bike1-small.png" alt="" />
+                                                </div>
+                                                <div class="right_modal-sec1">
+                                                    <div class="right__text-sec1">
+                                                        <p>
+                                                            Polaris 1000CC 4Seater Buggy <br />
+                                                            Rental in an open Desert Safari
+                                                        </p>
+                                                        <p>Price <span style="font-weight: 600;">₹ 1250</span></p>
+                                                        <!-- quantity section -->
+                                                        <div class="product-quantity" style="text-align: left;">
+                                                            <!-- <h3>Quantity</h3> -->
+                                                            <input class="input__modal_number" data-min="1" data-max="0" type="text" name="quantity" value="1" readonly="true" />
+                                                            <div class="quantity-selectors-container">
+                                                                <div class="quantity-selectors">
+                                                                    <button type="button" class="decrement-quantity substract__modal__menu" aria-label="Subtract one" data-direction="-1" disabled="disabled">
+                                                                        <span style="position: relative; bottom: 4px;">&#8722;</span>
+                                                                    </button>
+                                                                    <button type="button" class="increment-quantity icrement__modal__menu" aria-label="Add one" data-direction="1">
+                                                                        <span style="position: relative; bottom: 5px;">&#43;</span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- quantity section -->
+                                                    </div>
+                                                </div>
+
+                                                <div class="total__modal-sec1 addon__modal__sec">
+                                                    <p>Total</p>
+                                                    <p style="font-size: 15px; font-weight: 600;">₹ 1250</p>
+                                                    <a href="">Add</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- second -->
+                                        <!-- third -->
+                                        <div class="main-card">
+                                            <div class="card-body-1">
+                                                <div class="left-order-sec">
+                                                    <img style="border-radius: 22px; max-width: 120px; height: auto;" src="./assets/img/quad-bike/quad-bike1-small.png" alt="" />
+                                                </div>
+                                                <div class="right_modal-sec1">
+                                                    <div class="right__text-sec1">
+                                                        <p>
+                                                            Polaris 1000CC 4Seater Buggy <br />
+                                                            Rental in an open Desert Safari
+                                                        </p>
+                                                        <p>Price <span style="font-weight: 600;">₹ 1250</span></p>
+                                                        <!-- quantity section -->
+                                                        <div class="product-quantity" style="text-align: left;">
+                                                            <!-- <h3>Quantity</h3> -->
+                                                            <input class="input__modal_number" data-min="1" data-max="0" type="text" name="quantity" value="1" readonly="true" />
+                                                            <div class="quantity-selectors-container">
+                                                                <div class="quantity-selectors">
+                                                                    <button type="button" class="decrement-quantity substract__modal__menu" aria-label="Subtract one" data-direction="-1" disabled="disabled">
+                                                                        <span style="position: relative; bottom: 4px;">&#8722;</span>
+                                                                    </button>
+                                                                    <button type="button" class="increment-quantity icrement__modal__menu" aria-label="Add one" data-direction="1">
+                                                                        <span style="position: relative; bottom: 5px;">&#43;</span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- quantity section -->
+                                                    </div>
+                                                </div>
+
+                                                <div class="total__modal-sec1 addon__modal__sec">
+                                                    <p>Total</p>
+                                                    <p style="font-size: 15px; font-weight: 600;">₹ 1250</p>
+                                                    <a href="">Add</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- third -->
+                                        <!-- 4th  -->
+                                        <div class="main-card">
+                                            <div class="card-body-1">
+                                                <div class="left-order-sec">
+                                                    <img style="border-radius: 22px; max-width: 120px; height: auto;" src="./assets/img/quad-bike/quad-bike1-small.png" alt="" />
+                                                </div>
+                                                <div class="right_modal-sec1">
+                                                    <div class="right__text-sec1">
+                                                        <p>
+                                                            Polaris 1000CC 4Seater Buggy <br />
+                                                            Rental in an open Desert Safari
+                                                        </p>
+                                                        <p>Price <span style="font-weight: 600;">₹ 1250</span></p>
+                                                        <!-- quantity section -->
+                                                        <div class="product-quantity" style="text-align: left;">
+                                                            <!-- <h3>Quantity</h3> -->
+                                                            <input class="input__modal_number" data-min="1" data-max="0" type="text" name="quantity" value="1" readonly="true" />
+                                                            <div class="quantity-selectors-container">
+                                                                <div class="quantity-selectors">
+                                                                    <button type="button" class="decrement-quantity substract__modal__menu" aria-label="Subtract one" data-direction="-1" disabled="disabled">
+                                                                        <span style="position: relative; bottom: 4px;">&#8722;</span>
+                                                                    </button>
+                                                                    <button type="button" class="increment-quantity icrement__modal__menu" aria-label="Add one" data-direction="1">
+                                                                        <span style="position: relative; bottom: 5px;">&#43;</span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- quantity section -->
+                                                    </div>
+                                                </div>
+
+                                                <div class="total__modal-sec1 addon__modal__sec">
+                                                    <p>Total</p>
+                                                    <p style="font-size: 15px; font-weight: 600;">₹ 1250</p>
+                                                    <a href="">Add</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 4th  -->
+                                        <!-- 5th -->
+                                        <div class="main-card">
+                                            <div class="card-body-1">
+                                                <div class="left-order-sec">
+                                                    <img style="border-radius: 22px; max-width: 120px; height: auto;" src="./assets/img/quad-bike/quad-bike1-small.png" alt="" />
+                                                </div>
+                                                <div class="right_modal-sec1">
+                                                    <div class="right__text-sec1">
+                                                        <p>
+                                                            Polaris 1000CC 4Seater Buggy <br />
+                                                            Rental in an open Desert Safari
+                                                        </p>
+                                                        <p>Price <span style="font-weight: 600;">₹ 1250</span></p>
+                                                        <!-- quantity section -->
+                                                        <div class="product-quantity" style="text-align: left;">
+                                                            <!-- <h3>Quantity</h3> -->
+                                                            <input class="input__modal_number" data-min="1" data-max="0" type="text" name="quantity" value="1" readonly="true" />
+                                                            <div class="quantity-selectors-container">
+                                                                <div class="quantity-selectors">
+                                                                    <button type="button" class="decrement-quantity substract__modal__menu" aria-label="Subtract one" data-direction="-1" disabled="disabled">
+                                                                        <span style="position: relative; bottom: 4px;">&#8722;</span>
+                                                                    </button>
+                                                                    <button type="button" class="increment-quantity icrement__modal__menu" aria-label="Add one" data-direction="1">
+                                                                        <span style="position: relative; bottom: 5px;">&#43;</span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- quantity section -->
+                                                    </div>
+                                                </div>
+
+                                                <div class="total__modal-sec1 addon__modal__sec">
+                                                    <p>Total</p>
+                                                    <p style="font-size: 15px; font-weight: 600;">₹ 1250</p>
+                                                    <a href="">Add</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 5th -->
+                                    </div>
+                                </div>
+
+                                <!-- submit sec -->
+                                <div class="submit-section" style="text-align: end; padding: 20px; padding-right: 0px;">
+                                    <a
+                                        href=""
+                                        style="color: #fff; border: 2px solid #f7f7f7; background: transparent; border-radius: 30px; padding: 10px; padding-left: 24px; padding-right: 24px; font-weight: 600; position: relative; top: 12px;"
+                                    >
+                                        Submit
+                                    </a>
+                                </div>
+                                <!-- submit sec -->
+                            </div>
+                            <!-- modal popup content -->
+
+                            <!-- select your vehicle modal -->
+
+                            <div style="border-radius: 20px; background: #000000;" class="remodal" data-remodal-id="modal1" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+                                <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                               
+                                <div class="" style="margin-top: 15px;">
+                                    <div class="review-orders" style="height: 400px; overflow: scroll; overflow-x: hidden;">
+                                        
+                                        <div class="order-sections"></div>
+                                        <!-- 1st card -->
+
+                                        <div class="main-card" style="padding-left: 0px !important; padding-right: 0px !important; padding: 20px;">
+                                            <div class="card-body-1" style="padding: 15px;">
+                                                <div class="left-order-sec1">
+                                                    <img style="max-width: 130px; height: auto;" src="./assets/img/land-cruise.png" alt="" />
+                                                </div>
+                                                <div class="right_modal-sec1">
+                                                    <div class="right__text-sec1">
+                                                        <p>Land Cruiser (UP TO 7 PAX)</p>
+                                                        <p>No. of Vehicle :</p>
+                                                        <div class="product-quantity" style="text-align: left;">
+                                                            <!-- <h3>Quantity</h3> -->
+                                                            <input
+                                                                style="
+                                                                    position: relative;
+                                                                    max-width: 1.5rem;
+                                                                    margin: 0;
+                                                                    left: 12%;
+                                                                    bottom: 4px;
+                                                                    text-align: center;
+                                                                    border-right: 0;
+                                                                    width: 50px;
+                                                                    color: rgb(255 255 255);
+                                                                    background: transparent;
+                                                                "
+                                                                class=""
+                                                                data-min="1"
+                                                                data-max="0"
+                                                                type="text"
+                                                                name="quantity"
+                                                                value="1"
+                                                                readonly="true"
+                                                            />
+                                                            <div class="quantity-selectors-container">
+                                                                <div class="quantity-selectors">
+                                                                    <button type="button" class="decrement-quantity substract__modal__menu" aria-label="Subtract one" data-direction="-1" disabled="disabled">
+                                                                        <span style="position: relative; bottom: 4px;">&#8722;</span>
+                                                                    </button>
+                                                                    <button
+                                                                        style="position: relative; left: 18%; bottom: 25px; background: transparent; border: 1px solid #fff; color: #fff; border-radius: 50%; width: 18px; height: 18px;"
+                                                                        type="button"
+                                                                        class="increment-quantity icrement__modal__menu"
+                                                                        aria-label="Add one"
+                                                                        data-direction="1"
+                                                                    >
+                                                                        <span style="position: relative; bottom: 5px;">&#43;</span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- quantity section -->
+                                                    </div>
+                                                </div>
+                                               
+
+                                                <div class="total__modal-sec1">
+                                                    <p style="font-size: 15px; font-weight: 600;">AED 1250</p>
+                                                    <a class="total__modal__add_btn" href="">Add</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 1st card -->
+                                        <!-- second -->
+                                        <div class="main-card" style="padding-left: 0px !important; padding-right: 0px !important; padding: 20px;">
+                                            <div class="card-body-1" style="padding: 15px;">
+                                                <div class="left-order-sec1">
+                                                    <img style="max-width: 130px; height: auto;" src="./assets/img/quad-bike/quad-bike1-small.png" alt="" />
+                                                </div>
+                                                <div class="right_modal-sec1">
+                                                    <div class="right__text-sec1">
+                                                        <p>Land Cruiser (UP TO 7 PAX)</p>
+                                                        <p>No. of Vehicle :</p>
+                                                        <div class="product-quantity" style="text-align: left;">
+                                                            <!-- <h3>Quantity</h3> -->
+                                                            <input
+                                                                style="
+                                                                    position: relative;
+                                                                    max-width: 1.5rem;
+                                                                    margin: 0;
+                                                                    left: 12%;
+                                                                    bottom: 4px;
+                                                                    text-align: center;
+                                                                    border-right: 0;
+                                                                    width: 50px;
+                                                                    color: rgb(255 255 255);
+                                                                    background: transparent;
+                                                                "
+                                                                class=""
+                                                                data-min="1"
+                                                                data-max="0"
+                                                                type="text"
+                                                                name="quantity"
+                                                                value="1"
+                                                                readonly="true"
+                                                            />
+                                                            <div class="quantity-selectors-container">
+                                                                <div class="quantity-selectors">
+                                                                    <button type="button" class="decrement-quantity substract__modal__menu" aria-label="Subtract one" data-direction="-1" disabled="disabled">
+                                                                        <span style="position: relative; bottom: 4px;">&#8722;</span>
+                                                                    </button>
+                                                                    <button
+                                                                        style="position: relative; left: 18%; bottom: 25px; background: transparent; border: 1px solid #fff; color: #fff; border-radius: 50%; width: 18px; height: 18px;"
+                                                                        type="button"
+                                                                        class="increment-quantity icrement__modal__menu"
+                                                                        aria-label="Add one"
+                                                                        data-direction="1"
+                                                                    >
+                                                                        <span style="position: relative; bottom: 5px;">&#43;</span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- quantity section -->
+                                                    </div>
+                                                </div>
+                                               
+
+                                                <div class="total__modal-sec1">
+                                                    <p style="font-size: 15px; font-weight: 600;">AED 1250</p>
+                                                    <a class="total__modal__add_btn" href="">Add</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- second -->
+                                        <!-- third -->
+                                        <div class="main-card" style="padding-left: 0px !important; padding-right: 0px !important; padding: 20px;">
+                                            <div class="card-body-1" style="padding: 15px;">
+                                                <div class="left-order-sec1">
+                                                    <img style="max-width: 130px; height: auto;" src="./assets/img/land-cruise.png" alt="" />
+                                                </div>
+                                                <div class="right_modal-sec1">
+                                                    <div class="right__text-sec1">
+                                                        <p>Land Cruiser (UP TO 7 PAX)</p>
+                                                        <p>No. of Vehicle :</p>
+                                                        <div class="product-quantity" style="text-align: left;">
+                                                            <!-- <h3>Quantity</h3> -->
+                                                            <input
+                                                                style="
+                                                                    position: relative;
+                                                                    max-width: 1.5rem;
+                                                                    margin: 0;
+                                                                    left: 12%;
+                                                                    bottom: 4px;
+                                                                    text-align: center;
+                                                                    border-right: 0;
+                                                                    width: 50px;
+                                                                    color: rgb(255 255 255);
+                                                                    background: transparent;
+                                                                "
+                                                                class=""
+                                                                data-min="1"
+                                                                data-max="0"
+                                                                type="text"
+                                                                name="quantity"
+                                                                value="1"
+                                                                readonly="true"
+                                                            />
+                                                            <div class="quantity-selectors-container">
+                                                                <div class="quantity-selectors">
+                                                                    <button type="button" class="decrement-quantity substract__modal__menu" aria-label="Subtract one" data-direction="-1" disabled="disabled">
+                                                                        <span style="position: relative; bottom: 4px;">&#8722;</span>
+                                                                    </button>
+                                                                    <button
+                                                                        style="position: relative; left: 18%; bottom: 25px; background: transparent; border: 1px solid #fff; color: #fff; border-radius: 50%; width: 18px; height: 18px;"
+                                                                        type="button"
+                                                                        class="increment-quantity icrement__modal__menu"
+                                                                        aria-label="Add one"
+                                                                        data-direction="1"
+                                                                    >
+                                                                        <span style="position: relative; bottom: 5px;">&#43;</span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- quantity section -->
+                                                    </div>
+                                                </div>
+                                               
+
+                                                <div class="total__modal-sec1">
+                                                    <p style="font-size: 15px; font-weight: 600;">AED 1250</p>
+                                                    <a class="total__modal__add_btn" href="">Add</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- third -->
+                                        <!-- 4th  -->
+                                        <div class="main-card" style="padding-left: 0px !important; padding-right: 0px !important; padding: 20px;">
+                                            <div class="card-body-1" style="padding: 15px;">
+                                                <div class="left-order-sec1">
+                                                    <img style="max-width: 130px; height: auto;" src="./assets/img/quad-bike/quadbike4.png" alt="" />
+                                                </div>
+                                                <div class="right_modal-sec1">
+                                                    <div class="right__text-sec1">
+                                                        <p>Land Cruiser (UP TO 7 PAX)</p>
+                                                        <p>No. of Vehicle :</p>
+                                                        <div class="product-quantity" style="text-align: left;">
+                                                            <!-- <h3>Quantity</h3> -->
+                                                            <input
+                                                                style="
+                                                                    position: relative;
+                                                                    max-width: 1.5rem;
+                                                                    margin: 0;
+                                                                    left: 12%;
+                                                                    bottom: 4px;
+                                                                    text-align: center;
+                                                                    border-right: 0;
+                                                                    width: 50px;
+                                                                    color: rgb(255 255 255);
+                                                                    background: transparent;
+                                                                "
+                                                                class=""
+                                                                data-min="1"
+                                                                data-max="0"
+                                                                type="text"
+                                                                name="quantity"
+                                                                value="1"
+                                                                readonly="true"
+                                                            />
+                                                            <div class="quantity-selectors-container">
+                                                                <div class="quantity-selectors">
+                                                                    <button type="button" class="decrement-quantity substract__modal__menu" aria-label="Subtract one" data-direction="-1" disabled="disabled">
+                                                                        <span style="position: relative; bottom: 4px;">&#8722;</span>
+                                                                    </button>
+                                                                    <button
+                                                                        style="position: relative; left: 18%; bottom: 25px; background: transparent; border: 1px solid #fff; color: #fff; border-radius: 50%; width: 18px; height: 18px;"
+                                                                        type="button"
+                                                                        class="increment-quantity icrement__modal__menu"
+                                                                        aria-label="Add one"
+                                                                        data-direction="1"
+                                                                    >
+                                                                        <span style="position: relative; bottom: 5px;">&#43;</span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- quantity section -->
+                                                    </div>
+                                                </div>
+                                                
+
+                                                <div class="total__modal-sec1">
+                                                    <p style="font-size: 15px; font-weight: 600;">AED 1250</p>
+                                                    <a class="total__modal__add_btn" href="">Add</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 4th  -->
+                                        <!-- 5th -->
+                                        <div class="main-card" style="padding-left: 0px !important; padding-right: 0px !important; padding: 20px;">
+                                            <div class="card-body-1" style="padding: 15px;">
+                                                <div class="left-order-sec1">
+                                                    <img style="max-width: 130px; height: auto;" src="./assets/img/land-cruise.png" alt="" />
+                                                </div>
+                                                <div class="right_modal-sec1">
+                                                    <div class="right__text-sec1">
+                                                        <p>Land Cruiser (UP TO 7 PAX)</p>
+                                                        <p>No. of Vehicle :</p>
+                                                        <div class="product-quantity" style="text-align: left;">
+                                                            <!-- <h3>Quantity</h3> -->
+                                                            <input
+                                                                style="
+                                                                    position: relative;
+                                                                    max-width: 1.5rem;
+                                                                    margin: 0;
+                                                                    left: 12%;
+                                                                    bottom: 4px;
+                                                                    text-align: center;
+                                                                    border-right: 0;
+                                                                    width: 50px;
+                                                                    color: rgb(255 255 255);
+                                                                    background: transparent;
+                                                                "
+                                                                class=""
+                                                                data-min="1"
+                                                                data-max="0"
+                                                                type="text"
+                                                                name="quantity"
+                                                                value="1"
+                                                                readonly="true"
+                                                            />
+                                                            <div class="quantity-selectors-container">
+                                                                <div class="quantity-selectors">
+                                                                    <button type="button" class="decrement-quantity substract__modal__menu" aria-label="Subtract one" data-direction="-1" disabled="disabled">
+                                                                        <span style="position: relative; bottom: 4px;">&#8722;</span>
+                                                                    </button>
+                                                                    <button
+                                                                        style="position: relative; left: 18%; bottom: 25px; background: transparent; border: 1px solid #fff; color: #fff; border-radius: 50%; width: 18px; height: 18px;"
+                                                                        type="button"
+                                                                        class="increment-quantity icrement__modal__menu"
+                                                                        aria-label="Add one"
+                                                                        data-direction="1"
+                                                                    >
+                                                                        <span style="position: relative; bottom: 5px;">&#43;</span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- quantity section -->
+                                                    </div>
+                                                </div>
+                                                
+
+                                                <div class="total__modal-sec1">
+                                                    <p style="font-size: 15px; font-weight: 600;">AED 1250</p>
+                                                    <a class="total__modal__add_btn" href="">Add</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 5th -->
+                                    </div>
+                                </div>
+
+                                <!-- submit sec -->
+                                <div class="pickup__footer__section">
+                                    <div class="choose_your_location">
+                                        <form action="/action_page.php">
+                                            <label class="location__label" style="color: #fff;" for="cars">Choose Your Location:</label>
+                                            <select class="choose__location_select" name="cars" id="cars">
+                                                <option value="volvo">City / Hotel</option>
+                                                <option value="a1">Dubai</option>
+                                                <option value="a2">Oman</option>
+                                                <option value="a3">Dubai</option>
+                                                <option value="a4">Oman</option>
+                                                <option value="a5">Dubai</option>
+                                                <option value="a6">Oman</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                    <div class="location__or_sec">
+                                        <p style="margin-bottom: 0px; color: #fff;">Or</p>
+                                        <input class="type__location" type="text" placeholder="Type City / Hotel" />
+                                    </div>
+                                    <div class="submit-section1">
+                                        <a
+                                            href=""
+                                            style="
+                                                color: #fff;
+                                                border: 2px solid #f7f7f7;
+                                                background: transparent;
+                                                border-radius: 30px;
+                                                padding: 10px;
+                                                padding-left: 24px;
+                                                padding-right: 24px;
+                                                font-weight: 600;
+                                                position: relative;
+                                                top: 12px;
+                                            "
+                                        >
+                                            Submit
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- submit sec -->
+                            </div>
+
+                            <!-- select your vehicle modal -->
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 checkout-left-section">
+                                <h3 class="multisteps-form__title cntc-details">Contact Details</h3>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h4 class="email-sec">Email <span style="color: red;">*</span></h4>
+                                        <p>info_line@123.com</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div >
+                                            <h4 class="email-sec">Phone Number <span style="color: red;">*</span></h4>
+                                            <input class="multisteps-form__input form-control" type="number" required placeholder="Number" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="checkbox-one">
+                                            <form action="/action_page.php" class="checkbox-section">
+                                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+                                                <label style="padding-left: 8px;" for="vehicle1"> Receive text message updates about your booking. Message rates may apply.</label>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="traveller"></div>
+                                    <h3 class="traveller-details-h3">
+                                        Traveler Details
+                                    </h3>
+                                    <h4 class="email-sec F2name">Lead Traveler</h4>
+
+                                    <div class="col-md-6">
+                                        <div>
+                                            <h4 class="email-sec Fname">First Name <span style="color: red;">*</span></h4>
+                                            <input class="multisteps-form__input form-control" type="text" required placeholder="First Name" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div>
+                                            <h4 class="email-sec Fname">Last Name <span style="color: red;">*</span></h4>
+                                            <input class="multisteps-form__input form-control" type="text" required placeholder="First Name" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="padding-top: 50px;">
+                                    <h4 class="email-sec F2name">Traveler 2</h4>
+
+                                    <div class="col-md-6">
+                                        <div>
+                                            <h4 class="email-sec Fname">First Name <span style="color: red;">*</span></h4>
+                                            <input class="multisteps-form__input form-control" type="text" required placeholder="First Name" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div>
+                                            <h4 class="email-sec Fname">Last Name <span style="color: red;">*</span></h4>
+                                            <input class="multisteps-form__input form-control" type="text" required placeholder="First Name" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="next-btns"><a href="payment.html">Next</a></div>
+                            </div>
+                            <div class="col-lg-6 checkout-right-section">
+                                <div class="order-details">
+                                    <div class="review-orders review-orders1__sec">
+                                        <h3 class="order-details-h3">Review Order Details</h3>
+                                        <div class="order-sections">
+                                            <div class="left-order-sec">
+                                                <img style="max-width: 150px; height: auto;" src="./assets/img/quad-bike/quad-bike1-small.png" alt="" />
+                                            </div>
+                                            <div class="right-order-sec">
+                                                <div class="r1">
+                                                    <h3>Polaris 1000CC 4Seater Buggy Rental in an open Desert Safari</h3>
+                                                    <ul style="padding-left: 0px; padding-left: 0px; font-size: 15px; padding-top: 10px; color: #f5f5f5;">
+                                                        <li>
+                                                            <i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i> &nbsp;
+                                                            <span style="color: #fff;">17 reviews</span>
+                                                        </li>
+                                                        <li>1 BUGGY (UP TO 4 PAX) - 09:30</li>
+                                                        <li>Thursday, July 14, 2022</li>
+                                                        <li>2 Adults</li>
+                                                        <li>Non-refundable</li>
+                                                        <li>Price :<span> AED 1200 </span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- DEMO SECOND -->
+                                        <div class="order-sections">
+                                            <div class="left-order-sec">
+                                                <img style="max-width: 150px; height: auto;" src="./assets/img/quad-bike/quad-bike1-small.png" alt="" />
+                                            </div>
+                                            <div class="right-order-sec">
+                                                <div class="r1">
+                                                    <h3>Polaris 1000CC 4Seater Buggy Rental in an open Desert Safari</h3>
+                                                    <ul style="padding-left: 0px; padding-left: 0px; font-size: 15px; padding-top: 10px; color: #f5f5f5;">
+                                                        <li>
+                                                            <i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i> &nbsp;
+                                                            <span style="color: #fff;">17 reviews</span>
+                                                        </li>
+                                                        <li>1 BUGGY (UP TO 4 PAX) - 09:30</li>
+                                                        <li>Thursday, July 14, 2022</li>
+                                                        <li>2 Adults</li>
+                                                        <li>Non-refundable</li>
+                                                        <li>Price :<span> AED 1200 </span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- DEMO SECOND -->
+                                    </div>
+                                    <div class="total__subtotal">
+                                        <div class="booking-order">
+                                            <ul class="abcdf">
+                                                <li class="">Addons * <span> AED 1999</span></li>
+                                                <div class="addons-card">
+                                                    <div class="addons_card_body">
+                                                        <p>Land Cruiser (UP TO 7 PAX)</p>
+                                                        <p>Time : 09:30</p>
+                                                        <p>Thursday, July 14, 2022</p>
+                                                        <p>Non-refundable</p>
+                                                        <p>Price : AED 1999</p>
+                                                    </div>
+                                                </div>
+                                                <li>Subtotal: <span> AED 18,759.34</span></li>
+                                                <li style="font-weight: 600;">Total: <span> AED 18,759.34</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="book-confidence">
+                                    <div class="order-details" style="margin-top: 35px;">
+                                        <div class="review-orders">
+                                            <h3 class="order-details-h3">Book with confidence</h3>
+                                            <div class="order-sections order-sections2">
+                                                <ul style="padding-left: 0px;">
+                                                    <li>
+                                                        <i class="bx bx-wallet"></i> Lowest price guarantee <br />
+                                                        Find it cheaper? We'll refund the difference
+                                                    </li>
+
+                                                    <li>
+                                                        <i class="bx bx-lock-alt"></i> Privacy protection <br />
+                                                        We use SSL encryption to keep your data secure
+                                                    </li>
+                                                    <li>
+                                                        <i class="bx bx-headphone"></i> 24/7 global support <br />
+                                                        Get the answers you need, when you need them
+                                                    </li>
+                                                    <li>
+                                                        <i class="bx bx-phone"></i> Give us a call <br />
+                                                        We’d be happy to help you out with your booking
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section container">
+            <div class="footer__content">
+                <img src="./assets/img/logo-deserts.png" class="footer__logos__img" />
+                <div>
+                    <ul class="footer__logos">
+                        <li class="footer__li">
+                            <i class="bx bxl-facebook tp__sc"></i>
+                        </li>
+                        <li class="footer__li">
+                            <i class="bx bxl-instagram tp__sc"></i>
+                        </li>
+                        <li class="footer__li">
+                            <i class="bx bxl-whatsapp tp__sc"></i>
+                        </li>
+                        <li class="footer__li">
+                            <i class="bx bxl-youtube tp__sc"></i>
+                        </li>
+                        <li class="footer__li">
+                            <i class="bx bxl-twitter tp__sc"></i>
+                        </li>
+                        <li class="footer__li">
+                            <i class="bx bxl-tiktok tp__sc"></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__rights">
+                    <p class="footer__copy">&#169; 2022 DUNERIDE</p>
+                    <a href="#" class="footer__terms-link">TERMS & CONDITION</a>
+                    <a href="#" class="footer__terms-link">PRIVACY POLICY</a>
+                    <a href="#" class="footer__terms-link">FAQ & CONTACT</a>
+                </div>
+            </div>
+        </footer>
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+
+        <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line scrollup__icon"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/menu.js"></script>
+
+        <!-- bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+        <!-- seond modal popup -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>
+            window.jQuery || document.write('<script src="../libs/jquery/dist/jquery.min.js"><\/script>');
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js"></script>
+        <!-- seond modal popup -->
+
+        <!-- quantity selector -->
+        <script>
+            $("button").on("click", function (ev) {
+                var currentQty = $('input[name="quantity"]').val();
+                var qtyDirection = $(this).data("direction");
+                var newQty = 0;
+
+                if (qtyDirection == "1") {
+                    newQty = parseInt(currentQty) + 1;
+                } else if (qtyDirection == "-1") {
+                    newQty = parseInt(currentQty) - 1;
+                }
+
+                // make decrement disabled at 1
+                if (newQty == 1) {
+                    $(".decrement-quantity").attr("disabled", "disabled");
+                }
+
+                // remove disabled attribute on subtract
+                if (newQty > 1) {
+                    $(".decrement-quantity").removeAttr("disabled");
+                }
+
+                if (newQty > 0) {
+                    newQty = newQty.toString();
+                    $('input[name="quantity"]').val(newQty);
+                } else {
+                    $('input[name="quantity"]').val("1");
+                }
+            });
+        </script>
+        <!-- quantity selector -->
+    </body>
+</html>

@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="shortcut icon" href="./assets/img/fav-desert.png" type="image/png" />
+
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="fonts/Europa Regular (1).ttf" />
+        <link rel="stylesheet" href="./assets/fonts/Adventium.ttf" />
+
+        <!-- bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css" />
+
+        <title>Desert safari-dubai</title>
+        <style>
+            .header-video__responsive-wrapper iframe,
+            .header-video__responsive-wrapper object {
+                height: 577px;
+                left: 50%;
+                position: relative;
+                top: 4px;
+                transform: translateX(-50%);
+                width: 1385.77px;
+            }
+            /* @media only screen and (min-width: 768px)
+{
+.header-video__responsive-wrapper embed, .header-video__responsive-wrapper iframe, .header-video__responsive-wrapper object {
+    height: 100%;
+    width: 100%;
+}
+} */
+            /* navbar start */
+            @media screen and (min-width: 768px) {
+                body {
+                    margin: 0;
+                }
+                .nav {
+                    height: calc(var(--header-height) + 1.5rem);
+                }
+                .nav__link {
+                    color: var(--white-color);
+                    text-transform: initial;
+                }
+                .nav__link:hover {
+                    color: var(--white-color);
+                }
+                .nav__dark {
+                    position: initial;
+                }
+                .nav__menu {
+                    display: flex;
+                    column-gap: 1rem;
+                }
+                .nav__list {
+                    flex-direction: row;
+                    column-gap: 2rem;
+                }
+                .nav__toggle,
+                .nav__close {
+                    display: none;
+                }
+                .change-theme-name {
+                    display: none;
+                }
+                .change-theme {
+                    color: var(--white-color);
+                }
+                .active-link::before {
+                    background-color: var(--white-color);
+                }
+                .scroll-header .nav__link {
+                    color: var(--text-color);
+                }
+                .scroll-header .active-link {
+                    color: var(--title-color);
+                }
+                .scroll-header .active-link::before {
+                    background-color: var(--title-color);
+                }
+                .scroll-header .change-theme {
+                    color: var(--text-color);
+                }
+                .section {
+                    padding: 7rem 0 2rem;
+                }
+                .home__container {
+                    height: 100vh;
+                    grid-template-rows: 1.8fr 0.5fr;
+                }
+                .home__data {
+                    align-self: flex-end;
+                }
+                .home__social {
+                    flex-direction: row;
+                    align-self: flex-end;
+                    margin-bottom: 3rem;
+                    column-gap: 2.5rem;
+                }
+                .home__info {
+                    bottom: 3rem;
+                }
+                .about__container {
+                    grid-template-columns: repeat(3, 1fr);
+                    align-items: center;
+                }
+                .about__data,
+                .about__title {
+                    text-align: initial;
+                }
+                .about__title {
+                    margin-bottom: var(--mb-1-5);
+                }
+                .about__description {
+                    margin-bottom: var(--mb-2);
+                }
+                .discover__container {
+                    width: 610px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                .discover__container,
+                .place__container {
+                    padding-top: 2rem;
+                }
+                .experience__overlay:nth-child(1) {
+                    width: 363px;
+                    margin-right: 4rem;
+                }
+                .experience__overlay:nth-child(2) {
+                    width: 160px;
+                }
+                .subscribe__bg {
+                    background: none;
+                    padding: 0;
+                }
+                .subscribe__container {
+                    background-color: var(--first-color-second);
+                    padding: 3.5rem 0;
+                }
+                .subscribe__input {
+                    padding: 0 0.5rem;
+                }
+                .footer__rights {
+                    flex-direction: row;
+                    justify-content: space-around;
+                }
+            }
+            /* navbar end */
+        </style>
+    </head>
+    <body>
+        <div class="top__menu">
+            <div class="top__menu__container" style="background: #0e0d0d;">
+                <div class="top__menu__sub_c epp__desk">
+                    <div class="typ">
+                        <img src="./assets/img/fav-desert.png" class="nav__logo" style="width: 25px;" />
+                    </div>
+
+                    <div class="top__menu__titles">
+                        <span class="tp__head">ABOUT US</span>
+                    </div>
+                    <div class="top__menu__titles">
+                        <span class="tp__head">FAQ</span>
+                    </div>
+                    <div class="top__menu__titles">
+                        <span class="tp__head">BLOGS</span>
+                    </div>
+                    <div>
+                        <ul class="ert" style="margin-bottom: 0px;">
+                            <li class="lipp">
+                                <i class="bx bxl-facebook tp__sc"></i>
+                            </li>
+                            <li class="lipp">
+                                <i class="bx bxl-instagram tp__sc"></i>
+                            </li>
+                            <li class="lipp">
+                                <i class="bx bxl-whatsapp tp__sc"></i>
+                            </li>
+                            <li class="lipp">
+                                <i class="bx bxl-youtube tp__sc"></i>
+                            </li>
+                            <li class="lipp">
+                                <i class="bx bxl-twitter tp__sc"></i>
+                            </li>
+                            <li class="lipp">
+                                <i class="bx bxl-tiktok tp__sc"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="top__menu__sub_c epp__mob">
+                    <div class="typ">
+                        <img src="./assets/img/fav-desert.png" class="nav__logo" style="width: 25px;" />
+                    </div>
+
+                    
+                </div>
+
+                <!-- new nav section start -->
+
+                <!-- new nav section end -->
+
+                <div class="vgb">
+                    <a href="#modal"><span class="tp__head">CART</span></a>
+                    <a href="account.html"><span class="tp__head">MY ACCOUNT</span></a>
+                </div>
+            </div>
+        </div>
+
+        <header class="header">
+            <nav class="nav container">
+                <a href="index.html" class="nav__logo banner__logo-sec"><img src="./logo-deserts.png" alt="logo" /></a>
+                <a href="index.html" class="nav__logo banner__logo-sec logo__mobile"><img src="./logo-vertical.png" alt="logo" /></a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link">Home</a>
+                        </li>
+                        <li class="nav__item dropdown">
+                            <a href="services.html" class="nav__link">Quad Bike</a>
+                            <ul class="dropdown-content">
+                                <li>
+                                    <a href="quad-bike.html">1 Seater Quad Bike</a>
+                                    <a href="quad-bike__twoSeater.html">2 Seater Quad Bike</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item dropdown">
+                            <a href="#" class="nav__link">Dune Buggy</a>
+                            <ul class="dropdown-content">
+                                <li>
+                                    <a href="">1 Seater Dune Buggy</a>
+                                    <a href="">2 Seater Dune Buggy</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item dropdown">
+                            <a href="#" class="nav__link">Raptor</a>
+                            <ul class="dropdown-content">
+                                <li>
+                                    <a href="">1 Seater Raptor</a>
+                                    <a href="">Ktm Motocross</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Desert Safari</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Tours</a>
+                        </li>
+                    </ul>
+
+                    <!-- mobile-section navbar -->
+                    <div class="top-menu-main">
+                        <div class="top__menu__titles top-menu-title1">
+                            <span class="tp__head top-head-text">ABOUT US</span>
+                        </div>
+                        <div class="top__menu__titles top-menu-title1">
+                            <span class="tp__head top-head-text">FAQ</span>
+                        </div>
+                        <div class="top__menu__titles top-menu-title1">
+                            <span class="tp__head top-head-text">BLOGS</span>
+                        </div>
+                        <div class="top-menu-socialmedia">
+                            <ul class="ert" style="padding-left: 0px;">
+                                <li class="lipp">
+                                    <i class="bx bxl-facebook tp__sc top-social-media"></i>
+                                </li>
+                                <li class="lipp">
+                                    <i class="bx bxl-instagram tp__sc top-social-media"></i>
+                                </li>
+                                <li class="lipp">
+                                    <i class="bx bxl-whatsapp tp__sc top-social-media"></i>
+                                </li>
+                                <li class="lipp">
+                                    <i class="bx bxl-youtube tp__sc top-social-media"></i>
+                                </li>
+                                <li class="lipp">
+                                    <i class="bx bxl-twitter tp__sc top-social-media"></i>
+                                </li>
+                                <li class="lipp">
+                                    <i class="bx bxl-tiktok tp__sc top-social-media"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- mobile-section navbar -->
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="bx bx-x"></i>
+                    </div>
+                </div>
+
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="bx bx-grid-alt"></i>
+                </div>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="payment-bg-sec" style="background-image: url(./assets/img/anas.png); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
+                <div class="container">
+                    <div class="row">
+                       
+                        <div class="row">
+                            <div class="col-lg-7 payment-details-p1">
+                                <h3 class="multisteps-form__title payment-h3-details">Payment Details</h3>
+
+                                <div class="row">
+                                    <div class="cards-sections">
+                                        <label class="credit-cards" for="atm-card">
+                                            <span><i class="bx bxs-circle dots-circle"></i></span> Credit Card
+                                        </label>
+                                        <div class="payment-card">
+                                            <img src="./assets/img/cc_Visa_icon.svg" alt="" style="width: 30px; height: 30px;" />
+                                            <img src="./assets/img/cc_AMEX_2019_icon.svg" alt="" style="width: 30px; height: 30px;" />
+                                            <img src="./assets/img/cc_Mastercard_icon.svg" alt="" style="width: 30px; height: 30px;" />
+                                        </div>
+                                    </div>
+
+                                    <div class="card-holder">
+                                        <h4 class="email-sec">Cardholder Name <span style="color: red;">*</span></h4>
+                                        <input class="multisteps-form__input form-control input-box-payment" type="text" placeholder="" />
+                                    </div>
+                                    <div class="credit-card-number">
+                                        <h4 class="email-sec">Credit/debit card number <span style="color: red;">*</span></h4>
+                                        <input class="multisteps-form__input form-control input-box-payment" type="number" placeholder="" />
+                                    </div>
+
+                                    <div class="expiration">
+                                        <h4 class="email-sec">Credit/debit card number <span style="color: red;">*</span></h4>
+                                        <div class="month-year">
+                                            <form action="/action_page.php">
+                                                <select name="cars" id="cars" style="border: none; padding: 12px; padding-left: 15px; padding-right: 15px; outline: none;">
+                                                    <option value="volvo">Month</option>
+                                                    <option value="n1">01 - Jan</option>
+                                                    <option value="n2">02 - Feb</option>
+                                                    <option value="n3">03 - Mar</option>
+                                                    <option value="n4">04 - Apr</option>
+                                                    <option value="n5">05 - may </option>
+                                                    <option value="n6">06 - Jun</option>
+                                                    <option value="n7">07 - Jul</option>
+                                                    <option value="n8">08 - Aug</option>
+                                                    <option value="n9">09 - sep</option>
+                                                    <option value="n10">10 - Oct</option>
+                                                    <option value="n3">11 - Nov</option>
+                                                    <option value="n3">12 - Des</option>
+                                                </select>
+                                            </form>
+                                            <form action="/action_page.php">
+                                                <select name="cars" id="cars" style="border: none; padding: 12px; padding-left: 15px; padding-right: 15px; outline: none;">
+                                                    <option value="volvo">Year</option>
+                                                    <option value="n1">2022</option>
+                                                    <option value="n2">2023</option>
+                                                    <option value="n3">2024</option>
+                                                    <option value="n4">2025</option>
+                                                    <option value="n5">2026 </option>
+                                                    <option value="n6">2027</option>
+                                                    <option value="n7">2028</option>
+                                                    <option value="n8">2029</option>
+                                                    <option value="n9">2030</option>
+                                                    <option value="n10">2031</option>
+                                                    <option value="n3">2032</option>
+                                                    <option value="n3">2033</option>
+                                                </select>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="billing-address">
+                                        <h3 style="font-size: 1.5rem; margin-bottom: 20px;" class="">Billing Address</h3>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <h4 class="email-sec">Country <span style="color: red;">*</span></h4>
+
+                                                <div class="country-section">
+                                                    <form action="/action_page.php">
+                                                        <select name="cars" id="cars" style="border: none; padding: 12px; padding-left: 15px; padding-right: 15px; outline: none;">
+                                                            <option value="volvo">United States</option>
+                                                            <option value="c1">ab</option>
+                                                            <option value="c2">cd</option>
+                                                            <option value="c3">ef</option>
+                                                            <option value="c4">gh</option>
+                                                            <option value="c5">hi</option>
+                                                            <option value="c6">jk</option>
+                                                            <option value="c7">lm</option>
+                                                            <option value="c8">no</option>
+                                                            <option value="c9">pq</option>
+                                                        </select>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <h4 class="email-sec postal-zipcode">Postal/Zip Code<span style="color: red;">*</span></h4>
+                                                <input class="multisteps-form__input form-control input-box-payment" type="number" placeholder="" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                   
+                                </div>
+                               
+                                <div class="next-previous" style="display: flex; gap: 15px; position: relative; top: 8%;">
+                                    <div class="previous-btn">
+                                        <a href="checkout-main.html">Previous</a>
+                                    </div>
+                                    <div class="next-btns"><a href="review-order.html">Next</a></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 review-order-p1">
+                                <div class="order-details">
+                                    <div class="review-orders">
+                                        <h3 class="order-details-h3">Review Order Details</h3>
+                                        <div class="order-sections">
+                                            <div class="left-order-sec">
+                                                <img style="max-width: 150px; height: auto;" src="./assets/img/quad-bike/quad-bike1-small.png" alt="" />
+                                            </div>
+                                            <div class="right-order-sec">
+                                                <div class="r1">
+                                                    <h3>Polaris 1000CC 4Seater Buggy Rental in an open Desert Safari</h3>
+                                                    <ul style="padding-left: 0px; padding-left: 0px; font-size: 15px; padding-top: 10px; color: #f5f5f5;">
+                                                        <li><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i> &nbsp; <span style="color: #fff;">17 reviews</span></li>
+                                                        <li>1 BUGGY (UP TO 4 PAX) - 09:30</li>
+                                                        <li>Thursday, July 14, 2022</li>
+                                                        <li>2 Adults</li>
+                                                        <li>Non-refundable</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="booking-order">
+                                            <ul>
+                                                <li>Booking Fee <span>₹0.00</span></li>
+                                                <li>Subtotal: <span>₹18,759.34</span></li>
+                                                <li style="font-weight: 600;">Total: <span>₹18,759.34</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="book-confidence">
+                                    <div class="order-details" style="margin-top: 35px;">
+                                        <div class="review-orders">
+                                            <h3 class="order-details-h3">Book with confidence</h3>
+                                            <div class="order-sections order-sections2">
+                                                <ul style="padding-left: 0px;">
+                                                    <li>
+                                                        <i class="bx bx-wallet"></i> Lowest price guarantee <br />
+                                                        Find it cheaper? We'll refund the difference
+                                                    </li>
+
+                                                    <li>
+                                                        <i class="bx bx-lock-alt"></i> Privacy protection <br />
+                                                        We use SSL encryption to keep your data secure
+                                                    </li>
+                                                    <li>
+                                                        <i class="bx bx-headphone"></i> 24/7 global support <br />
+                                                        Get the answers you need, when you need them
+                                                    </li>
+                                                    <li>
+                                                        <i class="bx bx-phone"></i> Give us a call <br />
+                                                        We’d be happy to help you out with your booking
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section container">
+            <div class="footer__content">
+                <img src="./assets/img/logo-deserts.png" class="footer__logos__img" />
+                <div>
+                    <ul class="footer__logos">
+                        <li class="footer__li">
+                            <i class="bx bxl-facebook tp__sc"></i>
+                        </li>
+                        <li class="footer__li">
+                            <i class="bx bxl-instagram tp__sc"></i>
+                        </li>
+                        <li class="footer__li">
+                            <i class="bx bxl-whatsapp tp__sc"></i>
+                        </li>
+                        <li class="footer__li">
+                            <i class="bx bxl-youtube tp__sc"></i>
+                        </li>
+                        <li class="footer__li">
+                            <i class="bx bxl-twitter tp__sc"></i>
+                        </li>
+                        <li class="footer__li">
+                            <i class="bx bxl-tiktok tp__sc"></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__rights">
+                    <p class="footer__copy">&#169; 2022 DUNERIDE TOURISM LLC</p>
+                    <a href="#" class="footer__terms-link">TERMS & CONDITION</a>
+                    <a href="#" class="footer__terms-link">PRIVACY POLICY</a>
+                    <a href="#" class="footer__terms-link">FAQ & CONTACT</a>
+                </div>
+            </div>
+        </footer>
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+
+        <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line scrollup__icon"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/menu.js"></script>
+
+        <!-- bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    </body>
+</html>

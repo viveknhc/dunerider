@@ -1,0 +1,1515 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="shortcut icon" href="./assets/img/fav-desert.png" type="image/png" />
+
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="fonts/Europa Regular (1).ttf" />
+        <link rel="stylesheet" href="./assets/fonts/Adventium.ttf" />
+
+        <!-- fontawsome cdn -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css" />
+        <link rel="stylesheet" href="assets/css/responsive.css" />
+
+        <!-- time accordion -->
+        <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+
+        <title>Desert safari-dubai</title>
+        <style>
+            .header-video__responsive-wrapper iframe,
+            .header-video__responsive-wrapper object {
+                height: 577px;
+                left: 50%;
+                position: relative;
+                top: 4px;
+                transform: translateX(-50%);
+                width: 1385.77px;
+            }
+
+            /* product quantity */
+            .product-quantity {
+                width: 10rem;
+                display: block;
+            }
+            .quantity-selectors-container {
+                display: inline-block;
+                vertical-align: top;
+                margin: 0;
+                padding: 0;
+            }
+
+            .quantity-selectors {
+                /* display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0; */
+            }
+
+            .quantity-selectors button {
+                -webkit-appearance: none;
+                appearance: none;
+                margin: 0;
+                border-radius: 0;
+                border: 1px solid lightgray;
+                background-color: #fff;
+                color: grey;
+            }
+
+            .quantity-selectors button:first-child {
+                border-bottom: 0;
+            }
+
+            .quantity-selectors button:hover {
+                cursor: pointer;
+            }
+
+            .quantity-selectors button[disabled="disabled"] {
+                cursor: not-allowed;
+            }
+
+            .quantity-selectors button[disabled="disabled"] span {
+                opacity: 0.5;
+            }
+            /* product quantity */
+            /* @media only screen and (min-width: 768px)
+{
+.header-video__responsive-wrapper embed, .header-video__responsive-wrapper iframe, .header-video__responsive-wrapper object {
+    height: 100%;
+    width: 100%;
+}
+} */
+
+            /* modal popup start */
+            .swiper {
+                width: 100%;
+                height: 100%;
+            }
+
+            .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background: #fff;
+
+                /* Center slide text vertically */
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                align-items: center;
+            }
+
+            .swiper-slide img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            body {
+                background: #000;
+                color: #000;
+            }
+
+            .swiper {
+                width: 100%;
+                height: 300px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .swiper-slide {
+                background-size: cover;
+                background-position: center;
+            }
+
+            .mySwiper2 {
+                height: 80%;
+                width: 100%;
+            }
+
+            .mySwiper {
+                height: 20%;
+                box-sizing: border-box;
+                padding: 10px 0;
+            }
+
+            .mySwiper .swiper-slide {
+                width: 25%;
+                height: 100%;
+                opacity: 0.4;
+            }
+
+            .mySwiper .swiper-slide-thumb-active {
+                opacity: 1;
+            }
+
+            .swiper-slide img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            /* modal pop up */
+            .modal {
+                height: 100vh;
+                display: grid;
+                place-items: center;
+            }
+
+            .modal__button {
+                display: inline-block;
+                background-color: #0a2b3a;
+                color: #fff;
+                padding: 1rem 1.25rem;
+                border-radius: 0.5rem;
+                transition: 0.3s;
+            }
+
+            .modal__button:hover {
+                background-color: #320836;
+            }
+
+            .modal__container {
+                position: fixed;
+                top: 0;
+                left: 0;
+                background-color: hsla(var(--hue), 18%, 75%, 0.8);
+                width: 100%;
+                height: 100%;
+                display: grid;
+                align-items: flex-end;
+                overflow: hidden;
+                transition: all 0.3s;
+                z-index: 9999;
+                visibility: hidden;
+                opacity: 0;
+                background: #000000c7;
+            }
+
+            .modal__content {
+                position: relative;
+                background-color: var(--container-color);
+                text-align: center;
+                padding: 3rem 2rem 2rem;
+                border-radius: 1rem 1rem 0 0;
+                transition: all 0.3s;
+
+                transform: translateY(10%);
+            }
+
+            .modal__img {
+                width: 150px;
+                margin-bottom: 0.75rem;
+            }
+
+            .modal__close {
+                display: inline-flex;
+                /* background-color:#000; */
+                border-radius: 0.25rem;
+                color: #fff;
+                font-size: 1.5rem;
+                position: absolute;
+                top: 1rem;
+                right: 2rem;
+                cursor: pointer;
+            }
+
+            .modal__title {
+                font-size: 1.4rem;
+                color: var(--title-color);
+                font-weight: 500;
+            }
+
+            .modal__description {
+                margin-bottom: 1.5rem;
+            }
+
+            .modal__button-width {
+                width: 50%;
+            }
+
+            .modal__button-link {
+                display: block;
+                margin: 1rem auto 0;
+                background-color: transparent;
+                color: var(--first-color);
+                font-weight: 500;
+            }
+
+            /* Show modal */
+            .show-modal {
+                visibility: visible;
+                opacity: 1;
+            }
+
+            .show-modal .modal__content {
+                transform: translateY(0);
+            }
+
+            /*=============== BREAKPOINTS ===============*/
+            /* For small devices */
+            @media screen and (min-width: 576px) {
+                .modal__content {
+                    margin: auto;
+                    height: 550px;
+                    width: 750px;
+                    border-radius: 1.25rem;
+                }
+
+                .modal__img {
+                    width: 170px;
+                }
+            }
+
+            /* modal popup start */
+            /* media query start */
+            @media screen and(max-width:767px) {
+                body {
+                    margin: 0px !important;
+                }
+                .base1-text h3 {
+                    font-size: 1.5rem;
+                }
+            }
+            /* media query end */
+
+            /* new navbar css */
+
+            /* new navbar css */
+            /* navbar start */
+            @media screen and (min-width: 768px) {
+                body {
+                    margin: 0;
+                }
+                .nav {
+                    height: calc(var(--header-height) + 1.5rem);
+                }
+                .nav__link {
+                    color: var(--white-color);
+                    text-transform: initial;
+                }
+                .nav__link:hover {
+                    color: var(--white-color);
+                }
+                .nav__dark {
+                    position: initial;
+                }
+                .nav__menu {
+                    display: flex;
+                    column-gap: 1rem;
+                }
+                .nav__list {
+                    flex-direction: row;
+                    column-gap: 2rem;
+                }
+                .nav__toggle,
+                .nav__close {
+                    display: none;
+                }
+                .change-theme-name {
+                    display: none;
+                }
+                .change-theme {
+                    color: var(--white-color);
+                }
+                .active-link::before {
+                    background-color: var(--white-color);
+                }
+                .scroll-header .nav__link {
+                    color: var(--text-color);
+                }
+                .scroll-header .active-link {
+                    color: var(--title-color);
+                }
+                .scroll-header .active-link::before {
+                    background-color: var(--title-color);
+                }
+                .scroll-header .change-theme {
+                    color: var(--text-color);
+                }
+                .section {
+                    padding: 7rem 0 2rem;
+                }
+                .home__container {
+                    height: 100vh;
+                    grid-template-rows: 1.8fr 0.5fr;
+                }
+                .home__data {
+                    align-self: flex-end;
+                }
+                .home__social {
+                    flex-direction: row;
+                    align-self: flex-end;
+                    margin-bottom: 3rem;
+                    column-gap: 2.5rem;
+                }
+                .home__info {
+                    bottom: 3rem;
+                }
+                .about__container {
+                    grid-template-columns: repeat(3, 1fr);
+                    align-items: center;
+                }
+                .about__data,
+                .about__title {
+                    text-align: initial;
+                }
+                .about__title {
+                    margin-bottom: var(--mb-1-5);
+                }
+                .about__description {
+                    margin-bottom: var(--mb-2);
+                }
+                .discover__container {
+                    width: 610px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                .discover__container,
+                .place__container {
+                    padding-top: 2rem;
+                }
+                .experience__overlay:nth-child(1) {
+                    width: 363px;
+                    margin-right: 4rem;
+                }
+                .experience__overlay:nth-child(2) {
+                    width: 160px;
+                }
+                .subscribe__bg {
+                    background: none;
+                    padding: 0;
+                }
+                .subscribe__container {
+                    background-color: var(--first-color-second);
+                    padding: 3.5rem 0;
+                }
+                .subscribe__input {
+                    padding: 0 0.5rem;
+                }
+                .footer__rights {
+                    flex-direction: row;
+                    justify-content: space-around;
+                }
+                .cr__hd {
+                    /* font-size: 1.2rem; */
+                }
+            }
+            /* navbar end */
+        </style>
+    </head>
+    <body>
+        <div class="top__menu" style="background-color: #000; height: 36px;">
+            <div class="top__menu__container" style="background: #0e0d0d;">
+                <div class="top__menu__sub_c epp__desk">
+                    <div class="typ">
+                        <img src="./assets/img/fav-desert.png" class="nav__logo" style="width: 25px;" />
+                    </div>
+
+                    <div class="top__menu__titles">
+                        <span class="tp__head">ABOUT US</span>
+                    </div>
+                    <div class="top__menu__titles">
+                        <span class="tp__head">FAQ</span>
+                    </div>
+                    <div class="top__menu__titles">
+                        <span class="tp__head">BLOGS</span>
+                    </div>
+                    <div>
+                        <ul class="ert" style="margin-bottom: 0px;">
+                            <li class="lipp">
+                                <i class="bx bxl-facebook tp__sc"></i>
+                            </li>
+                            <li class="lipp">
+                                <i class="bx bxl-instagram tp__sc"></i>
+                            </li>
+                            <li class="lipp">
+                                <i class="bx bxl-whatsapp tp__sc"></i>
+                            </li>
+                            <li class="lipp">
+                                <i class="bx bxl-youtube tp__sc"></i>
+                            </li>
+                            <li class="lipp">
+                                <i class="bx bxl-twitter tp__sc"></i>
+                            </li>
+                            <li class="lipp">
+                                <i class="bx bxl-tiktok tp__sc"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="top__menu__sub_c epp__mob">
+                    <div class="typ">
+                        <img src="./assets/img/fav-desert.png" class="nav__logo" style="width: 25px;" />
+                    </div>
+
+                   
+                </div>
+
+                <div class="vgb">
+                    <a href="#modal3"><span class="tp__head">CART</span></a>
+                    <a href="account.html"><span class="tp__head">MY ACCOUNT</span></a>
+                </div>
+
+                <!-- modal popup content -->
+
+                <div style="border-radius: 20px; background: #000000;" class="remodal" data-remodal-id="modal3" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                   
+                    <div class="" style="margin-top: 15px;">
+                        <div class="review-orders" style="height: 400px; overflow: scroll; overflow-x: hidden;">
+                           
+                            <div class="order-sections"></div>
+                            <!-- 1st card -->
+
+                            <div class="main-card1">
+                                <div class="card-body-1">
+                                    <div class="left-order-sec">
+                                        <img style="border-radius: 22px; max-width: 120px; height: auto;" src="./assets/img/quad-bike/quad-bike1-small.png" alt="" />
+                                    </div>
+                                    <div class="right_modal-sec1">
+                                        <div class="right__text-sec1">
+                                            <p>
+                                                Polaris 1000CC 4Seater Buggy <br />
+                                                Rental in an open Desert Safari
+                                            </p>
+                                            <p>Non-refundable</p>
+                                            <div class="product-quantity" style="text-align: left;">
+                                                <!-- <h3>Quantity</h3> -->
+                                                <input class="input__modal_number3" data-min="1" data-max="0" type="text" name="quantity" value="1" readonly="true" />
+                                                <div class="quantity-selectors-container">
+                                                    <div class="quantity-selectors">
+                                                        <button type="button" class="decrement-quantity substract__modal__menu3" aria-label="Subtract one" data-direction="-1" disabled="disabled">
+                                                            <span style="position: relative; bottom: 3px; color: #fff;">&#8722;</span>
+                                                        </button>
+                                                        <button type="button" class="increment-quantity icrement__modal__menu3" aria-label="Add one" data-direction="1">
+                                                            <span style="position: relative; bottom: 5px; color: #fff;">&#43;</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- quantity section -->
+                                        </div>
+                                    </div>
+
+                                    <div class="total__modal-sec1">
+                                        <p class="total__modal_p">Price</p>
+                                        <p class="total__modal_p2">AED 1250</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 1st card -->
+                            <!-- second -->
+                            <div class="main-card1">
+                                <div class="card-body-1">
+                                    <div class="left-order-sec">
+                                        <img style="border-radius: 22px; max-width: 120px; height: auto;" src="./assets/img/quad-bike/quad-bike1-small.png" alt="" />
+                                    </div>
+                                    <div class="right_modal-sec1">
+                                        <div class="right__text-sec1">
+                                            <p>
+                                                Polaris 1000CC 4Seater Buggy <br />
+                                                Rental in an open Desert Safari
+                                            </p>
+                                            <p>Non-refundable</p>
+                                            <div class="product-quantity" style="text-align: left;">
+                                                <!-- <h3>Quantity</h3> -->
+                                                <input class="input__modal_number3" data-min="1" data-max="0" type="text" name="quantity" value="1" readonly="true" />
+                                                <div class="quantity-selectors-container">
+                                                    <div class="quantity-selectors">
+                                                        <button type="button" class="decrement-quantity substract__modal__menu3" aria-label="Subtract one" data-direction="-1" disabled="disabled">
+                                                            <span style="position: relative; bottom: 3px; color: #fff;">&#8722;</span>
+                                                        </button>
+                                                        <button type="button" class="increment-quantity icrement__modal__menu3" aria-label="Add one" data-direction="1">
+                                                            <span style="position: relative; bottom: 5px; color: #fff;">&#43;</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- quantity section -->
+                                        </div>
+                                    </div>
+
+                                    <div class="total__modal-sec1">
+                                        <p class="total__modal_p">Price</p>
+                                        <p class="total__modal_p2">AED 1250</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- second -->
+                            <!-- third -->
+                            <div class="main-card1">
+                                <div class="card-body-1">
+                                    <div class="left-order-sec">
+                                        <img style="border-radius: 22px; max-width: 120px; height: auto;" src="./assets/img/quad-bike/quad-bike1-small.png" alt="" />
+                                    </div>
+                                    <div class="right_modal-sec1">
+                                        <div class="right__text-sec1">
+                                            <p>
+                                                Polaris 1000CC 4Seater Buggy <br />
+                                                Rental in an open Desert Safari
+                                            </p>
+                                            <p>Non-refundable</p>
+                                            <div class="product-quantity" style="text-align: left;">
+                                                <!-- <h3>Quantity</h3> -->
+                                                <input class="input__modal_number3" data-min="1" data-max="0" type="text" name="quantity" value="1" readonly="true" />
+                                                <div class="quantity-selectors-container">
+                                                    <div class="quantity-selectors">
+                                                        <button type="button" class="decrement-quantity substract__modal__menu3" aria-label="Subtract one" data-direction="-1" disabled="disabled">
+                                                            <span style="position: relative; bottom: 3px; color: #fff;">&#8722;</span>
+                                                        </button>
+                                                        <button type="button" class="increment-quantity icrement__modal__menu3" aria-label="Add one" data-direction="1">
+                                                            <span style="position: relative; bottom: 5px; color: #fff;">&#43;</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- quantity section -->
+                                        </div>
+                                    </div>
+
+                                    <div class="total__modal-sec1">
+                                        <p class="total__modal_p">Price</p>
+                                        <p class="total__modal_p2">AED 1250</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- third -->
+                        </div>
+                    </div>
+
+                    <!-- submit sec -->
+                    <div class="total_and__checkout">
+                        <div class="sub__total-sec">
+                            <p>Subtotal (3 item): <span style="font-weight: 600;"> AED 3,2056</span></p>
+                        </div>
+                        <div class="submit-section">
+                            <a class="proceed__to__checkout_btn" href="checkout-main.html">Proceed to Checkout</a>
+                        </div>
+                    </div>
+                    <!-- submit sec -->
+                </div>
+                <!-- modal popup content -->
+            </div>
+        </div>
+
+        <header class="header">
+            <nav class="nav container">
+                <a href="index.html" class="nav__logo banner__logo-sec"><img src="./logo-deserts.png" alt="logo" /></a>
+                <a href="index.html" class="nav__logo banner__logo-sec logo__mobile"><img src="./logo-vertical.png" alt="logo" /></a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link">Home</a>
+                        </li>
+                        <li class="nav__item dropdown">
+                            <a href="services.html" class="nav__link">Quad Bike</a>
+                            <ul class="dropdown-content">
+                                <li>
+                                    <a href="quad-bike.html">1 Seater Quad Bike</a>
+                                    <a href="quad-bike__twoSeater.html">2 Seater Quad Bike</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item dropdown">
+                            <a href="#" class="nav__link">Dune Buggy</a>
+                            <ul class="dropdown-content">
+                                <li>
+                                    <a href="">1 Seater Dune Buggy</a>
+                                    <a href="">2 Seater Dune Buggy</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item dropdown">
+                            <a href="#" class="nav__link">Raptor</a>
+                            <ul class="dropdown-content">
+                                <li>
+                                    <a href="">1 Seater Raptor</a>
+                                    <a href="">Ktm Motocross</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Desert Safari</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Tours</a>
+                        </li>
+                    </ul>
+
+                    <!-- mobile-section navbar -->
+                    <div class="top-menu-main">
+                        <div class="top__menu__titles top-menu-title1">
+                            <span class="tp__head top-head-text">ABOUT US</span>
+                        </div>
+                        <div class="top__menu__titles top-menu-title1">
+                            <span class="tp__head top-head-text">FAQ</span>
+                        </div>
+                        <div class="top__menu__titles top-menu-title1">
+                            <span class="tp__head top-head-text">BLOGS</span>
+                        </div>
+                        <div class="top-menu-socialmedia">
+                            <ul class="ert" style="padding-left: 0px;">
+                                <li class="lipp">
+                                    <i class="bx bxl-facebook tp__sc top-social-media"></i>
+                                </li>
+                                <li class="lipp">
+                                    <i class="bx bxl-instagram tp__sc top-social-media"></i>
+                                </li>
+                                <li class="lipp">
+                                    <i class="bx bxl-whatsapp tp__sc top-social-media"></i>
+                                </li>
+                                <li class="lipp">
+                                    <i class="bx bxl-youtube tp__sc top-social-media"></i>
+                                </li>
+                                <li class="lipp">
+                                    <i class="bx bxl-twitter tp__sc top-social-media"></i>
+                                </li>
+                                <li class="lipp">
+                                    <i class="bx bxl-tiktok tp__sc top-social-media"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- mobile-section navbar -->
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="bx bx-x"></i>
+                    </div>
+                </div>
+
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="bx bx-grid-alt"></i>
+                </div>
+            </nav>
+        </header>
+
+        <!-- new navbar start -->
+        <nav class="navbar navbar-expand-lg navbar-light one-best">
+            <div class="container-fluid">
+                <button
+                    style="display: none;"
+                    class="navbar-toggler navbar-hamburger"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" style="display: block;">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="display: flex; flex-direction: row; gap: 5px;">
+                        <li class="nav-item">
+                            <a style="color: #fff;" class="nav-link active" aria-current="page" href="#overview">Overview</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="color: rgb(204, 204, 204);" class="nav-link" href="#inclusion">Inclusion & Exclusion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="color: rgb(204, 204, 204);" class="nav-link" href="#faq">Faq</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="color: rgb(204, 204, 204);" class="nav-link" href="#suggest">Suggested</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="color: rgb(204, 204, 204);" class="nav-link" href="#review">Review</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- new navbar start -->
+        <main class="main">
+            <!--==================== HOME ====================-->
+
+            <section id="base1">
+                <div class="container">
+                    <div class="base1-text">
+                        <h3>TWO SEATER QUAD BIKE</h3>
+                        <ul style="display: flex; gap: 0.5rem; padding-left: 0px;">
+                            <li><i class="bx bxs-star"></i></li>
+                            <li><i class="bx bxs-star"></i></li>
+                            <li><i class="bx bxs-star"></i></li>
+                            <li><i class="bx bxs-star"></i></li>
+                            <li><i class="bx bxs-star"></i></li>
+                            <p style="color: #fff; padding-left: 15px;">4.9 / 5</p>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="one_seater-quad-bike" style="position: relative;">
+                                        <img style="position: relative;" class="Quad-bike_1seater" src="./assets/img/quad-bike/Quad-bike.png" alt="" st />
+                                        <i id="open-modal" class="fa-solid fa-eye modal-view-eye"></i>
+                                        <div class="fade_bottom"></div>
+                                    </div>
+
+                                    <!-- modal pop up start -->
+                                    <div class="modal__container" id="modal-container">
+                                        <div class="modal__content">
+                                            <div class="modal__close close-modal" title="Close">
+                                                <i class="bx bx-x"></i>
+                                            </div>
+
+                                            <!-- modal popup section -->
+                                            <!-- Swiper -->
+
+                                            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff;" class="swiper mySwiper2">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <img src="./assets/img/quad-bike/Quad-bike.png" />
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img src="./assets/img/quad-bike/quad-bike2-modal.png" />
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img src="./assets/img/quad-bike/quad-bike3-modal.png" />
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img src="./assets/img/quad-bike/quad-bike4-modal.png" />
+                                                    </div>
+
+                                                   
+                                                </div>
+                                                <div class="swiper-button-next"></div>
+                                                <div class="swiper-button-prev"></div>
+                                            </div>
+                                            <div thumbsSlider="" class="swiper mySwiper">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <img src="./assets/img/quad-bike/quad-bike2-small.png" />
+                                                    </div>
+
+                                                    <div class="swiper-slide">
+                                                        <img src="./assets/img/quad-bike/quad-bike3-small.png" />
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img src="./assets/img/quad-bike/quadbike4.png" />
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img src="./assets/img/quad-bike/quad-bike1-small.png" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- modal popup section -->
+                                        </div>
+                                    </div>
+                                    <!-- modal pop up end -->
+                                    <p class="modal-bottom">
+                                        Ride solo on a self-drive quad bike into the open desert and feel the adrenaline pumping. All our riders are instructed ahead of the activity by our expert guides. Follow your guide through the curves
+                                        of the golden sands at your own pace.
+                                    </p>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="row">
+                                        <div class="col-md-12 one_seater-quad-bike" style="position: relative;">
+                                            <img class="desert-img1" src="./assets/img/quad-bike/quad-bike2.png" alt="" style="border-radius: 3px;" />
+                                            <img class="desert-img2" src="./assets/img/quad-bike/quad-bike2_mobile.png" alt="" style="border-radius: 3px;" />
+                                            <i id="" class="fa-solid fa-eye modal-view-eye"></i>
+                                            <div class="fade_bottom"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="padding-top: 10px;">
+                                        <div class="col-sm-6 col-md-6 one_seater-quad-bike" style="position: relative;">
+                                            <img class="desert-img3" src="./assets/img/quad-bike/quad-bike3-small.png" alt="" style="width: 100%; border-radius: 3px;" />
+                                            <img class="desert-img4" src="./assets/img/quad-bike/quad-bike3-mobile.png" alt="" style="width: 100%;" />
+                                            <i id="" class="fa-solid fa-eye modal-view-eye"></i>
+                                            <div class="fade_bottom"></div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 one_seater-quad-bike" style="position: relative;">
+                                            <img class="desert-img5" src="./assets/img/quad-bike/quadbike4.png" alt="" style="width: 100%; border-radius: 3px;" />
+                                            <img class="desert-img6" src="./assets/img/quad-bike/quad-bike4-mobile.png" alt="" style="width: 100%;" />
+                                            <i id="" class="fa-solid fa-eye modal-view-eye"></i>
+                                            <div class="fade_bottom"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- navbar new section -->
+            <!-- navbar new section -->
+
+            <section id="overview">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <div class="base2-text" style="padding-top: 30px;">
+                                        <h3 class="overview-t1">Overview</h3>
+                                        <p class="overview-para">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore reiciendis sapiente maxime! Sapiente quas eaque sunt obcaecati tempora? Sit rem cupiditate error sed aliquid ullam iure nostrum
+                                            dicta Lorem ipsum dolor sit,
+                                        </p>
+                                        <div class="base2-inner-content">
+                                            <div class="left-section">
+                                                <h3 style="font-size: 16px;">Know before you go</h3>
+                                                <div class="left-section-p" style="padding-top: 8px; color: #fff;">
+                                                    <p style="margin-bottom: 0px;">Duration: 31-60 minutes</p>
+                                                    <p style="margin-bottom: 0px;">Mobile tickets accepted</p>
+                                                    <p style="margin-bottom: 0px;">Instant confirmation</p>
+                                                </div>
+                                            </div>
+                                            <div class="right-section">
+                                                <h3 style="font-size: 16px;">Cancellation policy</h3>
+                                                <p style="color: #fff; padding-top: 8px; font-size: 0.9375rem;">
+                                                    For a full refund, cancel at least 24 hours in <br />
+                                                    advance of the start date of the experience.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <h3 class="expected-h3">What to expect</h3>
+                                        <p class="expect-para">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis inventore tempora, odit deleniti numquam laborum explicabo. Excepturi, reiciendis consequatur exercitationem praesentium vel, at
+                                            adipisci, natus tempora molestiae a ipsum eos.Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis inventore tempora Lorem Ipsum is simply dummy text of the printing and typesetting
+                                            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived
+                                            not only five centuries.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="qert" style="border: 1px solid #e0e0e0; border-radius: 10px; background-color: #080808; box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;">
+                                        <!-- <h6 class="asdf">Book Your Slot</h6> -->
+                                        <h3 style="text-align: center; color: #fff;" class="h3__huihui">Check Your Availability</h3>
+                                        <div class="book-slot" style="padding-top: 12px;">
+                                            <ul class="availability-sec">
+                                                <li class="p__fhghh price-sec">Price <span style="font-size: 0.9375rem; line-height: 1.67; color: #fff; font-weight: 500;">150 / hours</span></li>
+                                                <li class="p__fhghh hours-sec">
+                                                    No. of Vehicles
+                                                    <div class="product-quantity">
+                                                        <!-- <h3>Quantity</h3> -->
+                                                        <input
+                                                            style="
+                                                                position: relative;
+                                                                left: 53.5%;
+                                                                bottom: 13px;
+                                                                max-width: 7.7rem;
+                                                                margin: 0;
+                                                                padding: 0.86rem 0;
+                                                                text-align: center;
+                                                                /* border-top: 1px solid lightgray; */
+                                                                /* border-left: 1px solid lightgray; */
+                                                                /* border-bottom: 1px solid lightgray; */
+                                                                border-right: 0;
+                                                                width: 50px;
+                                                                background: #080808;
+                                                                color: #fff;
+                                                            "
+                                                            data-min="1"
+                                                            data-max="0"
+                                                            type="text"
+                                                            name="quantity"
+                                                            value="1"
+                                                            readonly="true"
+                                                        />
+                                                        <div class="quantity-selectors-container">
+                                                            <div class="quantity-selectors">
+                                                                <button
+                                                                    style="padding-left: 16px; /* border-radius: 50%; */ padding-right: 10px; background: #080808; border: none;"
+                                                                    type="button"
+                                                                    class="decrement-quantity substract-sec"
+                                                                    aria-label="Subtract one"
+                                                                    data-direction="-1"
+                                                                    disabled="disabled"
+                                                                >
+                                                                    <span>&#8722;</span>
+                                                                </button>
+                                                                <button
+                                                                    style="padding-left: 12px; /* border-radius: 50%; */ padding-right: 10px; background: #080808; border: none; position: relative; left: 70%;"
+                                                                    type="button"
+                                                                    class="increment-quantity adding-sec"
+                                                                    aria-label="Add one"
+                                                                    data-direction="1"
+                                                                >
+                                                                    <span>&#43;</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <form class="time-section" action="/action_page.php">
+                                                        <label class="time-section-2" style="" for="appt">Duration :</label>
+                                                        <select name="cars" id="cars" class="time-sec">
+                                                            <option value="a2">00 : 15</option>
+                                                            <option value="a2">00 : 30</option>
+                                                            <option value="a2">01 : 00</option>
+                                                            <option value="a3">01 : 30</option>
+                                                            <option value="a4">02 : 00</option>
+                                                            <option value="a5">02 : 30</option>
+                                                            <option value="a6">03 : 00</option>
+                                                            <option value="a7">03 : 30</option>
+                                                            <option value="a8">04 : 00</option>
+                                                            <option value="a9">04 : 30</option>
+                                                            <option value="a10">05 : 00</option>
+                                                            <option value="a11">05 : 30</option>
+                                                        </select>
+                                                    </form>
+                                                </li>
+                                                <li>
+                                                    <form class="date-sec" action="/action_page.php">
+                                                        <label class="date-sections" for="birthday">Date :</label>
+                                                        <input class="date-input-sec" type="date" id="birthday" name="birthday" />
+                                                       
+                                                    </form>
+                                                </li>
+                                                <li>
+                                                    <form class="time-section2" action="/action_page.php">
+                                                        <label class="time-section-2" style="" for="appt">Time :</label>
+                                                        <select name="cars" id="cars" class="time-sec">
+                                                           
+                                                            <option value="a2">00 : 15</option>
+                                                            <option value="a2">00 : 30</option>
+                                                            <option value="a2">01 : 00</option>
+                                                            <option value="a3">01 : 30</option>
+                                                            <option value="a4">02 : 00</option>
+                                                            <option value="a5">02 : 30</option>
+                                                            <option value="a6">03 : 00</option>
+                                                            <option value="a7">03 : 30</option>
+                                                            <option value="a8">04 : 00</option>
+                                                            <option value="a9">04 : 30</option>
+                                                            <option value="a10">05 : 00</option>
+                                                            <option value="a11">05 : 30</option>
+                                                        </select>
+                                                    </form>
+                                                </li>
+                                                
+
+                                                <li style="color: #fff; font-weight: 600; padding-top: 12px;">
+                                                    <form action="/action_page.php">
+                                                        <div class="test-rental-main" style="">
+                                                            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+                                                            <label class="test-rental-sec" for="vehicle1"> Test Rental <span style="font-size: 0.9375rem; line-height: 1.67; color: #fff; font-weight: 500;">456</span> </label><br />
+                                                        </div>
+
+                                                       
+                                                    </form>
+                                                </li>
+                                                <li class="equipment-fee">Equipment fee <span style="font-size: 0.9375rem; line-height: 1.67; color: #fff; font-weight: 500;">100</span></li>
+                                                <li class="facility-fee">Facility fee <span style="font-size: 0.9375rem; line-height: 1.67; color: #fff; font-weight: 500;">200</span></li>
+                                                <li class="test-rental-2">Test rental <span style="font-size: 0.9375rem; line-height: 1.67; color: #fff; font-weight: 500;">570</span></li>
+                                            </ul>
+                                            <div class="submit-slot">
+                                                <a href="#modal3" style="background: transparent; font-weight: 600; border-radius: 3px; color: #fff;">Book Now</a>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="inclusion" style="background-color: #000;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-8">
+                            <!-- base2-text second -->
+                            <div class="base2-text">
+                                <h3 class="inclusion-h3">Inclusion & Exclusion</h3>
+                                <p style="padding-top: 10px; text-align: justify; line-height: 28px; color: #fff;">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore reiciendis sapiente maxime! Sapiente quas eaque sunt obcaecati tempora? Sit rem cupiditate error sed aliquid ullam iure nostrum dicta
+                                    Lorem ipsum dolor sit,Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </p>
+                                <div class="inclusion-exclusion">
+                                    <div class="left-inclusion">
+                                        <h3 style="padding-top: 15px; font-size: 16px;">Inclusion</h3>
+                                        <ul class="inclusion-ul-text">
+                                            <li>Lorem ipsum ipsum</li>
+                                            <li>Lorem ipsum ipsum</li>
+                                            <li>Lorem ipsum ipsum</li>
+                                            <li>Lorem ipsum ipsum</li>
+                                        </ul>
+                                    </div>
+                                    <div class="right-exclusion">
+                                        <h3 style="padding-top: 15px; font-size: 16px;">Exclusion</h3>
+                                        <ul class="exclusion-ul-text">
+                                            <li>Lorem ipsum ipsum</li>
+                                            <li>Lorem ipsum ipsum</li>
+                                            <li>Lorem ipsum ipsum</li>
+                                            <li>Lorem ipsum ipsum</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="faq" style="background: #000; padding-top: 50px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <h3 class="faq-h3">Faq</h3>
+                            <p class="faq-para">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore reiciendis sapiente maxime! Sapiente quas eaque sunt obcaecati tempora? Sit rem cupiditate error sed aliquid ullam iure nostrum dicta Lorem
+                                ipsum dolor sit,Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <div class="col-lg-4">
+                            <h3 class="information-h3">Additional Information</h3>
+                            <ul class="add-info additional-ul-text" style="">
+                                <li>Confirmation will be received at time of booking</li>
+                                <li>Not recommended for travelers with back problems</li>
+                                <li>Confirmation will be received at time of booking</li>
+                                <li>Confirmation will be received at time of booking</li>
+                                <li>Confirmation will be received at time of booking</li>
+                                <li>Confirmation will be received at time of booking</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="suggest" style="background-color: #000; padding-bottom: 80px;">
+                <div class="container">
+                    <h2 class="suggested-h3">Suggested Services</h2>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-4">
+                            <div class="rf__card">
+                                <img src="./assets/img/home_page/Qbike_1seater.png" class="abt__img" />
+                                <div class="rf__card__sub">
+                                    <h2 class="cr__hd">SINGLE SEATER QUAD BIKE</h2>
+                                    <p class="cr__p">Ride solo on a self-drive quad bike into the open desert and feel the adrenaline pumping.All our riders are instructed ahead of the activity by our expert guides.</p>
+                                    <a href="#" class="button popi">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                            <div class="rf__card">
+                                <img src="./assets/img/home_page/raptor.png" class="abt__img" />
+                                <div class="rf__card__sub">
+                                    <h2 class="cr__hd">SINGLE SEATER RAPTOR</h2>
+                                    <p class="cr__p">Are you ready to ride a 700CC Raptor across the golden sand dunes of Dubai? This is a unique opportunity indegenouss to the UAE.</p>
+                                    <a href="#" class="button popi">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                            <div class="rf__card">
+                                <img src="./assets/img/home_page/polarise_1seater.png" class="abt__img" />
+                                <div class="rf__card__sub">
+                                    <h2 class="cr__hd">POLARISE DUNE BUGGY</h2>
+                                    <p class="cr__p">Do you love adventures? Feel the adrenaline pumping as you make those twists and turns with the curving sands.</p>
+                                    <a href="#" class="button popi">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="review" style="background: #000;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <h3 style="font-size: 25px;">Reviews</h3>
+                            <ul class="reviews" style="display: flex; gap: 0.5rem; padding-left: 0px; padding-top: 15px;">
+                                <li style="color: #fff;">5.0 &nbsp; <i class="bx bxs-star"></i></li>
+                                <li><i class="bx bxs-star"></i></li>
+                                <li><i class="bx bxs-star"></i></li>
+                                <li><i class="bx bxs-star"></i></li>
+                                <li><i class="bx bxs-star"></i> &nbsp; <span style="color: #fff;">17 reviews</span></li>
+                            </ul>
+
+                            <div class="review-inner">
+                                <p class="review-p1">Excellent</p>
+                                <div class="progress-bar">
+                                    <div class="progress-bar-inner"></div>
+                                </div>
+                               
+                                <p class="review-r1">5/5</p>
+                            </div>
+                            <div class="review-inner2">
+                                <p class="very-good">Good</p>
+                                <div class="progress-bar2">
+                                    <div class="progress-bar-inner2"></div>
+                                </div>
+                                <p class="review-r2">4.3/5</p>
+                            </div>
+                            <div class="review-inner3">
+                                <p class="review-p3">Average</p>
+                                <div class="progress-bar3">
+                                    <div class="progress-bar-inner3"></div>
+                                </div>
+                                
+                                <p class="review-r3">4.8/5</p>
+                            </div>
+                            <div class="review-inner4">
+                                <p class="review-p4">Poor</p>
+                                <div class="progress-bar4">
+                                    <div class="progress-bar-inner4"></div>
+                                </div>
+                               
+                                <p class="review-r4">2.1/5</p>
+                            </div>
+                            <div class="review-inner5">
+                                <p class="review-p5">Terrible</p>
+                                <div class="progress-bar5">
+                                    <div class="progress-bar-inner5"></div>
+                                </div>
+                                
+                                <p class="review-r5">4.1/5</p>
+                            </div>
+                           
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="review-section">
+                                <div class="icon-review">
+                                    <img src="./assets/img/man.png" alt="Avatar" style="max-width: 50px;" />
+                                    <h3 style="font-size: 14px; font-weight: 600;">Ashiq muhammed</h3>
+                                </div>
+                                <div class="star-sec">
+                                    <ul class="reviews-content">
+                                        <li><i class="bx bxs-star"></i></li>
+                                        <li><i class="bx bxs-star"></i></li>
+                                        <li><i class="bx bxs-star"></i></li>
+                                        <li><i class="bx bxs-star"></i></li>
+                                        <li><i class="bx bxs-star"></i></li>
+                                    </ul>
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, accusamus labore! Debitis omnis, totam iure aliquid praesentium odio saepe atque aspernatur consequatur veniam eius obcaecati? Nemo vel
+                                        ab doloremque! Dolore!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="review-section">
+                                <div class="icon-review">
+                                    <img src="./assets/img/man.png" alt="Avatar" style="max-width: 50px;" />
+                                    <h3 style="font-size: 14px; font-weight: 600;">Ashiq muhammed</h3>
+                                </div>
+                                <div class="star-sec">
+                                    <ul class="reviews-content">
+                                        <li><i class="bx bxs-star"></i></li>
+                                        <li><i class="bx bxs-star"></i></li>
+                                        <li><i class="bx bxs-star"></i></li>
+                                        <li><i class="bx bxs-star"></i></li>
+                                        <li><i class="bx bxs-star"></i></li>
+                                    </ul>
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, accusamus labore! Debitis omnis, totam iure aliquid praesentium odio saepe atque aspernatur consequatur veniam eius obcaecati? Nemo vel
+                                        ab doloremque! Dolore!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="review-section">
+                                <div class="icon-review">
+                                    <img src="./assets/img/man.png" alt="Avatar" style="max-width: 50px;" />
+                                    <h3 style="font-size: 14px; font-weight: 600;">Ashiq muhammed</h3>
+                                </div>
+                                <div class="star-sec">
+                                    <ul class="reviews-content">
+                                        <li><i class="bx bxs-star"></i></li>
+                                        <li><i class="bx bxs-star"></i></li>
+                                        <li><i class="bx bxs-star"></i></li>
+                                        <li><i class="bx bxs-star"></i></li>
+                                        <li><i class="bx bxs-star"></i></li>
+                                    </ul>
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, accusamus labore! Debitis omnis, totam iure aliquid praesentium odio saepe atque aspernatur consequatur veniam eius obcaecati? Nemo vel
+                                        ab doloremque! Dolore!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="review-section">
+                                <div class="icon-review">
+                                    <img src="./assets/img/man.png" alt="Avatar" style="max-width: 50px;" />
+                                    <h3 style="font-size: 14px; font-weight: 600;">Ashiq muhammed</h3>
+                                </div>
+                                <div class="star-sec">
+                                    <ul class="reviews-content">
+                                        <li><i class="bx bxs-star"></i></li>
+                                        <li><i class="bx bxs-star"></i></li>
+                                        <li><i class="bx bxs-star"></i></li>
+                                        <li><i class="bx bxs-star"></i></li>
+                                        <li><i class="bx bxs-star"></i></li>
+                                    </ul>
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, accusamus labore! Debitis omnis, totam iure aliquid praesentium odio saepe atque aspernatur consequatur veniam eius obcaecati? Nemo vel
+                                        ab doloremque! Dolore!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section container">
+            <div class="footer__content">
+                <img src="./assets/img/logo-deserts.png" class="footer__logos__img" />
+                <div>
+                    <ul class="footer__logos">
+                        <li class="footer__li">
+                            <i class="bx bxl-facebook tp__sc"></i>
+                        </li>
+                        <li class="footer__li">
+                            <i class="bx bxl-instagram tp__sc"></i>
+                        </li>
+                        <li class="footer__li">
+                            <i class="bx bxl-whatsapp tp__sc"></i>
+                        </li>
+                        <li class="footer__li">
+                            <i class="bx bxl-youtube tp__sc"></i>
+                        </li>
+                        <li class="footer__li">
+                            <i class="bx bxl-twitter tp__sc"></i>
+                        </li>
+                        <li class="footer__li">
+                            <i class="bx bxl-tiktok tp__sc"></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__rights">
+                    <p class="footer__copy">&#169; 2022 DUNERIDE DUBAI</p>
+                    <a href="#" class="footer__terms-link">TERMS & CONDITION</a>
+                    <a href="#" class="footer__terms-link">PRIVACY POLICY</a>
+                    <a href="#" class="footer__terms-link">FAQ & CONTACT</a>
+                </div>
+            </div>
+        </footer>
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                loop: true,
+                // navigation: {
+                //     nextEl: ".swiper-button-next",
+                //     prevEl: ".swiper-button-prev",
+                // },
+                scrollbar: {
+                    el: ".swiper-scrollbar",
+                },
+            });
+        </script>
+
+        <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line scrollup__icon"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!-- bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/menu.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+        <!-- time accodion -->
+        <!-- <script>
+            function myFunction(id) {
+              var x = document.getElementById(id);
+              if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+              } else { 
+                x.className = x.className.replace(" w3-show", "");
+              }
+            }
+            </script> -->
+        <!-- time accodion -->
+        <!-- quantity selector -->
+        <script>
+            $("button").on("click", function (ev) {
+                var currentQty = $('input[name="quantity"]').val();
+                var qtyDirection = $(this).data("direction");
+                var newQty = 0;
+
+                if (qtyDirection == "1") {
+                    newQty = parseInt(currentQty) + 1;
+                } else if (qtyDirection == "-1") {
+                    newQty = parseInt(currentQty) - 1;
+                }
+
+                // make decrement disabled at 1
+                if (newQty == 1) {
+                    $(".decrement-quantity").attr("disabled", "disabled");
+                }
+
+                // remove disabled attribute on subtract
+                if (newQty > 1) {
+                    $(".decrement-quantity").removeAttr("disabled");
+                }
+
+                if (newQty > 0) {
+                    newQty = newQty.toString();
+                    $('input[name="quantity"]').val(newQty);
+                } else {
+                    $('input[name="quantity"]').val("1");
+                }
+            });
+        </script>
+        <!-- quantity selector -->
+
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                spaceBetween: 10,
+                slidesPerView: 4,
+                freeMode: true,
+                watchSlidesProgress: true,
+            });
+            var swiper2 = new Swiper(".mySwiper2", {
+                spaceBetween: 10,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                thumbs: {
+                    swiper: swiper,
+                },
+            });
+        </script>
+        <script>
+            const fullImg = document.querySelector(".modal__full-img");
+            const smallImg = document.querySelectorAll(".gallery__img-container img");
+            const modal = document.querySelector(".modal");
+
+            smallImg.forEach((img, index) => {
+                img.addEventListener("click", () => {
+                    modal.classList.add("modal--open");
+                    fullImg.classList.add("modal__full-img--open");
+                    fullImg.src = `https://source.unsplash.com/random/${index}`;
+                });
+            });
+
+            modal.addEventListener("click", (e) => {
+                if (e.target.classList.contains("modal")) {
+                    modal.classList.remove("modal--open");
+                    fullImg.classList.remove("modal__full-img--open");
+                }
+            });
+        </script>
+
+        <script>
+            /*=============== SHOW MODAL ===============*/
+            const showModal = (openButton, modalContent) => {
+                const openBtn = document.getElementById(openButton),
+                    modalContainer = document.getElementById(modalContent);
+
+                if (openBtn && modalContainer) {
+                    openBtn.addEventListener("click", () => {
+                        modalContainer.classList.add("show-modal");
+                    });
+                }
+            };
+            showModal("open-modal", "modal-container");
+
+            /*=============== CLOSE MODAL ===============*/
+            const closeBtn = document.querySelectorAll(".close-modal");
+
+            function closeModal() {
+                const modalContainer = document.getElementById("modal-container");
+                modalContainer.classList.remove("show-modal");
+            }
+            closeBtn.forEach((c) => c.addEventListener("click", closeModal));
+        </script>
+
+        
+
+        <!-- new navbar start -->
+        <script>
+            $(function () {
+                let isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
+
+                if (!isMobile) {
+                    $(window).scroll(function () {
+                        var scroll = $(window).scrollTop();
+                        console.log(scroll);
+                        //>=, not <=
+                        if (scroll >= 800) {
+                            //clearHeader, not clearheader - caps H
+                            $(".one-best").addClass("display__onebest");
+                        } else {
+                            $(".one-best").removeClass("display__onebest");
+                        }
+                    });
+                } else {
+                    $(window).scroll(function () {
+                        var scroll = $(window).scrollTop();
+
+                        //>=, not <=
+                        if (scroll >= 1500) {
+                            console.log(scroll);
+                            //clearHeader, not clearheader - caps H
+                            $(".one-best").addClass("display__onebest");
+                        } else {
+                            $(".one-best").removeClass("display__onebest");
+                        }
+                    });
+                }
+            });
+        </script>
+        <!-- new navbar end -->
+
+        <!-- nav active class start -->
+
+        <!-- nav active class start -->
+
+        <!-- seond modal popup -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>
+            window.jQuery || document.write('<script src="../libs/jquery/dist/jquery.min.js"><\/script>');
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js"></script>
+        <!-- seond modal popup -->
+    </body>
+</html>
