@@ -54,12 +54,18 @@
                     <i class="mdi mdi-close"></i>
                 </button>
 
+                <style>
+                    .logo img{
+                        max-width: 120px;
+                    }
+                </style>
                 <!-- LOGO -->
                 <div class="topbar-left">
                     <div class="text-center">
                         <!--<a href="index.html" class="logo"><i class="mdi mdi-assistant"></i> Urora</a>-->
                         <a href="#" class="logo">
-                            <img src="{{asset('admin/images/logo-lg.png')}}" alt="" class="logo-large">
+                            <img src="{{asset('client/images/logo-deserts.png')}}" alt="logo" >
+                            
                         </a>
                     </div>
                 </div>

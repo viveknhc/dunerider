@@ -11,6 +11,13 @@
         <!--=============== BOXICONS ===============-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
         <!--=============== SWIPER CSS ===============-->
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
         <link rel="stylesheet" href="{{asset('client/fonts/Europa Regular (1).ttf')}}" />
@@ -209,9 +216,7 @@
                             <li class="lipp">
                                 <i class="bx bxl-twitter tp__sc"></i>
                             </li>
-                            <li class="lipp">
-                                <i class="bx bxl-tiktok tp__sc"></i>
-                            </li>
+                          
                         </ul>
                     </div>
                 </div>
@@ -395,7 +400,7 @@
                     </ul>
 
                     <!-- mobile-section navbar -->
-                    <div class="top-menu-main">
+                    <!-- <div class="top-menu-main">
                         <div class="top__menu__titles top-menu-title1">
                             <span class="tp__head top-head-text">ABOUT US</span>
                         </div>
@@ -419,15 +424,9 @@
                                 <li class="lipp">
                                     <a href="https://www.youtube.com/channel/UCY_eRcUC9Gxf-Pmrk6Hqn1Q/featured"><i class="bx bxl-youtube tp__sc top-social-media"></i></a>
                                 </li>
-                                <!-- <li class="lipp">
-                                    <a href="#"><i class="bx bxl-twitter tp__sc top-social-media"></i></a>
-                                </li>
-                                <li class="lipp">
-                                    <a href="#"><i class="bx bxl-tiktok tp__sc top-social-media"></i></a>
-                                </li> -->
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- mobile-section navbar -->
 
                     <div class="nav__close" id="nav-close">

@@ -387,7 +387,7 @@
 
 
                     <!-- mobile-section navbar -->
-                    <div class="top-menu-main">
+                    <!-- <div class="top-menu-main">
                     <div class="top__menu__titles top-menu-title1">
                         <span class="tp__head top-head-text">ABOUT US</span>
                     </div>
@@ -419,7 +419,7 @@
                             </li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
                     <!-- mobile-section navbar -->
 
                     <div class="nav__close" id="nav-close">

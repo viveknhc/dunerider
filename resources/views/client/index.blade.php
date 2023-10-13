@@ -87,24 +87,67 @@
         </div>
     </section>
 
-    <section>
+
+    @include('client_layout.service-feature')
+
+
+    <!-- <section>
         <h2 class="tom__title">OUR MOST POPULAR EXPERIENCES</h2>
         <h6 class="tom__sub_h jmk">Entertain with Adventerous Activities</h6>
-        <div class="row">
-            <div class="col-lg-6">
-                <h1>d9sfiyvgdjskf</h1>
-            </div>
-            <div class="col-lg-6">
-                <h1>d9sfiyvgdjskf</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="qert">
+                        <h3 class="h3__huihui">Quad Bike</h3>
+                        <p class="p__fhghh">
+                            One of Dubai's unique offerings is the desert activities. And none is more adventerous than
+                            riding
+                            the sand dunes on a self-drive Quad Bike. Up the energy quotient on this trip with a 1 hour
+                            Quad
+                            Bike activity.
+                            Our expert instructors will guide you on safety protocols before you start so you can have a
+                            safe
+                            and wonderful experience.Enjoy an hour in your favorite desert activites. Get on a Quad Bike
+                            for 30
+                            minutes
+                            followed by a camel ride. Strap on a sandboard and glide down the dunes. Safety equipment
+                            will be
+                            provided including a Rider kit, Goggles and Helmet for the Quad Bike. Our expert instructors
+                            will
+                            guide you ahead
+                            of the activities.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                        <div class="swiper mySwiper'">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="{{asset('client/img/quad-bikes_home/Qbike1.png')}}" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="{{asset('client/img/quad-bikes_home/Qbike2.png')}}" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="{{asset('client/img/quad-bikes_home/Qbike3.png')}}" />
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                 
+                </div>
             </div>
         </div>
-    </section>
-    <!--====================  ====================-->
-    <section class="about__safari section container">
+
+    </section> -->
+
+    <!-- <section class="about__safari section container">
         <h2 class="tom__title">OUR MOST POPULAR EXPERIENCES</h2>
         <h6 class="tom__sub_h jmk">Entertain with Adventerous Activities</h6>
         <div class="tom__container">
-            <!-- <div class="qert">
+            <div class="qert">
                 <h3 class="h3__huihui">Quad Bike</h3>
                 <p class="p__fhghh">
                     One of Dubai's unique offerings is the desert activities. And none is more adventerous than riding
@@ -118,10 +161,10 @@
                     guide you ahead
                     of the activities.
                 </p>
-            </div> -->
-            <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
+            </div>
+            <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
-            <!-- <div class="swiper swiper-index'">
+            <div class="swiper swiper-index'">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <img src="{{asset('client/img/quad-bikes_home/Qbike1.png')}}" />
@@ -136,14 +179,14 @@
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-scrollbar"></div>
-            </div> -->
+            </div>
 
         </div>
-    </section>
-    <!--====================  ====================-->
-    <section class="about__safari section container">
+    </section> -->
+
+    <!-- <section class="about__safari section container">
         <div class="tomt__container">
-            <!-- <div class="swiper mySwiper">
+            <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <img src="{{asset('client/img/Raptor_home/raptor1.png')}}" />
@@ -158,10 +201,9 @@
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-scrollbar"></div>
-            </div> -->
+            </div>
 
             <div class="qert raptor__mob1">
-                <!-- <h6 class="asdf">2022</h6> -->
                 <h3 class="h3__huihui">Raptor</h3>
                 <p class="p__fhghh">
                     Are you ready to ride a 700CC Raptor across the golden sand dunes of Dubai? This is a unique
@@ -176,11 +218,9 @@
             </div>
         </div>
     </section>
-    <!--====================  ====================-->
     <section class="about__safari section container">
         <div class="tom__container">
             <div class="qert">
-                <!-- <h6 class="asdf">2022</h6> -->
                 <h3 class="h3__huihui">Camel Ride</h3>
                 <p class="p__fhghh">
                     Following the huge success of its first ever digital edition in 2020, Tomorrowland brought back the
@@ -195,7 +235,7 @@
                 </p>
             </div>
 
-            <!-- <div class="swiper mySwiper">
+            <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <img src="{{asset('client/img/camel-ride/camel-ride1.png')}}" />
@@ -210,14 +250,13 @@
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-scrollbar"></div>
-            </div> -->
+            </div>
         </div>
     </section>
-    <!--====================  ====================-->
-    <!--====================  ====================-->
+
     <section class="about__safari section container">
         <div class="tomt__container">
-            <!-- <div class="swiper mySwiper">
+            <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <img src="{{asset('client/img/canam-ride/canam-ride1.png')}}" />
@@ -232,10 +271,9 @@
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-scrollbar"></div>
-            </div> -->
+            </div>
 
             <div class="qert raptor__mob1">
-                <!-- <h6 class="asdf">2022</h6> -->
                 <h3 class="h3__huihui">Can-Am</h3>
                 <p class="p__fhghh">
                     Buckle your seat belts on for an action-packed thriller on a Can-Am 2 Seatrer buggy. Enjoy this
@@ -249,8 +287,7 @@
             </div>
         </div>
     </section>
-    <!--====================  ====================-->
-    <!--====================  ====================-->
+
     <section class="about__safari section4 container">
         <div class="container">
             <div class="qert" style="background: #000; padding-top: 0px;padding-bottom: 0px;">
@@ -274,15 +311,16 @@
                 </p>
             </div>
         </div>
-    </section>
-    <!--====================  ====================-->
+    </section> -->
+
+
 </main>
 
 <!-- Swiper JS -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
 
 <!-- Initialize Swiper -->
-<script>
+<!-- <script>
     var swiper = new Swiper(".mySwiper", {
         spaceBetween: 10,
 
@@ -297,7 +335,7 @@
         },
 
     });
-</script>
+</script> -->
 
 @include('client_layout.footer')
 <!-- quantity selector -->

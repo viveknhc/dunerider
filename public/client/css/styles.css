@@ -241,7 +241,7 @@ input {
   font-weight: 600;
 }
 .add__to_cart:hover{
-  background-color: #f69320;
+  background-color: #ec1a25;
   color: #fff;
   border: none;
 
@@ -261,7 +261,7 @@ input {
       padding-right: 16px; font-weight: 600;
 }
 .proceed__to_cart:hover{
-  background-color: #f69320;
+  background-color: #ec1a25;
   color: #fff;
 }
 .availability-sec{
@@ -420,10 +420,10 @@ input {
   /* padding: 10px; */
 }
 .submit-slot:hover{
-  background-color: #f69320;
+  background-color: #ec1a25;
   color: #15649f;
   border: none;
-  border: 1px solid #f69320;
+  border: 1px solid #ec1a25;
 }
 .icon-review{
   display: flex;
@@ -469,7 +469,7 @@ input {
 top: 12px;
 }
 .proceed__to__checkout_btn:hover{
-  background-color: #f69320;
+  background-color: #ec1a25;
   color: #fff;
   border: none;
 }
@@ -1363,6 +1363,7 @@ bottom: 4px;
 }
 
 .dropdown-content li a {
+
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -1371,7 +1372,7 @@ bottom: 4px;
   padding: 10px 15px;
   text-align: left;
   width: 250px;
-  background: #fff;
+
   font-size: 14px;
   
  
@@ -1406,7 +1407,7 @@ bottom: 4px;
   transition: .3s;
 }
 .next-btns a:hover{
-  background-color: #f69320;
+  background-color: #ec1a25;
     color: #fff;
 }
 .previous-btn a{
@@ -1419,7 +1420,7 @@ bottom: 4px;
 
 }
 .previous-btn a:hover{
-  background-color: #f69320;
+  background-color: #ec1a25;
     color: #fff;
 }
 .email-sec{
@@ -1624,7 +1625,7 @@ bottom: 4px;
   position: absolute;
   color: #ffffff;
   font-weight: 600;
-  background: #f69320;
+  background: #ec1a25;
   padding: 8px;
   padding-left: 20px;
   padding-right: 20px;
@@ -2186,7 +2187,7 @@ bottom: 4px;
 }
 
 .button:hover {
-  background-color: #f69320;
+  background-color: #ec1a25;
   color: #fff;
 }
 
