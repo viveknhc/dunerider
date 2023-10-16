@@ -362,7 +362,7 @@
                             </ul>
                         </li>
                         <li class="nav__item dropdown">
-                            <a href="#" class="nav__link">Dune Buggy</a>
+                            <a href="{{url('services')}}" class="nav__link">Dune Buggy</a>
                             <ul class="dropdown-content">
                                 <li>
                                 <a href="{{url('product/one-seater-dune-buggy-self-ride-to-open-desert')}}">1 Seater Dune Buggy</a>
@@ -371,7 +371,7 @@
                             </ul>
                         </li>
                         <li class="nav__item dropdown">
-                            <a href="#" class="nav__link">Raptor</a>
+                            <a href="{{url('services')}}" class="nav__link">Raptor</a>
                             <ul class="dropdown-content">
                                 <li>
                                 <a href="{{url('product/one-seater-raptor-self-ride-to-open-desert')}}">1 Seater Raptor</a>

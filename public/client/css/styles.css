@@ -4583,13 +4583,12 @@ max-width: fit-content;
   position: relative;
   left: 39.5%;
 }
-
-
-
-
-
 }
 
 
 
-
+.popi-black{
+  margin-top: 20px;
+  background-color: #000;
+  color: #fff;
+}

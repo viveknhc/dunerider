@@ -80,6 +80,13 @@
                     guide you ahead
                     of the activities.
                 </p>
+                <div class="text-end">
+                <a href="{{url('product/one-seater-quad-bike-self-ride-to-open-desert')}}" class="button popi-black">Book
+                        Activity</a>
+                </div>
+           
+
+
             </div>
         </div>
 
@@ -129,6 +136,11 @@
                     before the start of the ride. The riders move in small groups led by their instructor so you know
                     you are in safe hands!
                 </p>
+                <div class="text-end">
+                <a href="{{url('product/one-seater-raptor-self-ride-to-open-desert')}}" class="button popi-black">Book
+                        Activity</a>
+                </div>
+           
             </div>
         </div>
     </div>
@@ -149,6 +161,11 @@
                     from all corners of the globe united again as one in one place – celebrating the spectacle of
                     friendship.
                 </p>
+                <div class="text-end">
+                <a href="{{url('services')}}" class="button popi-black">Book
+                        Activity</a>
+                </div>
+           
             </div>
         </div>
 
@@ -197,6 +214,12 @@
                     your ride. All
                     SOPs are followed and the vehicles and equipment are properly sanitised.
                 </p>
+
+                <div class="text-end">
+                <a href="{{url('services')}}" class="button popi-black">Book
+                        Activity</a>
+                </div>
+           
             </div>
         </div>
     </div>

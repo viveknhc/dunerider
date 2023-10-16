@@ -1385,7 +1385,7 @@
                 <div class="top__menu__titles">
                     <span class="tp__head">BLOGS</span>
                 </div>
-             
+
             </div>
 
             <div class="top__menu__sub_c epp__mob">
@@ -1427,7 +1427,7 @@
 
             <div style="border-radius: 20px; background: #000000;" class="remodal" data-remodal-id="modal" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
                 <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
-               
+
                 <div class="" style="margin-top: 15px;">
                     <div class="review-orders" style="height: 400px; overflow: scroll; overflow-x: hidden;">
                         <div class="order-sections"></div>
@@ -1606,7 +1606,7 @@
                         <a href="{{url('product/private-standard-desert-safari-upto-5-persons')}}"
                             class="nav__link">Desert Safari</a>
                     </li>
-               
+
                 </ul>
 
                 <!-- mobile-section navbar -->

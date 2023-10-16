@@ -16,6 +16,8 @@
                             <p class="hjk">
                                 One of Dubai's unique offerings is the desert activities. And none is more adventerous than riding the sand dunes on a self-drive Quad Bike. Up the energy quotient on this trip with a 1 hour Quad Bike activity. 
                             </p>
+
+                            <a href="">HIii</a>
                         </div>
                     </div>
                     <div class="rf__card">
@@ -24,7 +26,7 @@
                         <div class="rf__card__sub">
                             <h2 class="cr__hd">1 SEATER QUAD BIKE</h2>
                             <p class="cr__p">Ride solo on a self-drive quad bike into the open desert and feel the adrenaline pumping.All our riders are instructed ahead of the activity by our expert guides.</p>
-                            <a href="{{url('product/1-seater-quad-bike-self-ride-to-open-desert')}}" class="button popi">Book Now</a>
+                            <a href="{{url('product/one-seater-quad-bike-self-ride-to-open-desert')}}" class="button popi">Book Now</a>
                         </div>
                       
                     </div>
@@ -38,97 +40,7 @@
                         </div>
                     </div>
                     
-                    <!-- second -->
-                <!-- <h3 style="padding-left: 30px;padding-bottom: 40px;font-size: 1.8rem;padding-top: 30px;">Dune Buggy</h3> -->
-              
-                
-                <!-- <div class="rf__card">
-                    <img src="{{asset('client/img/home_page/raptor.png')}}" class="abt__img" />
-                    <div class="rf__card__sub">
-                        <h2 class="cr__hd">SINGLE SEATER RAPTOR</h2>
-                        <p class="cr__p">Are you ready to ride a 700CC Raptor across the golden sand dunes of Dubai? This is a unique opportunity indegenouss to the UAE.</p>
-                        <a href="#" class="button popi">Book Now</a>
-                    </div>
-                    
-                </div>
-                <div class="rf__card">
-                    <img src="{{asset('client/img/home_page/polarise_1seater.png')}}" class="abt__img" />
-                    <div class="rf__card__sub">
-                        <h2 class="cr__hd">POLARISE DUNE BUGGY</h2>
-                        <p class="cr__p">Do you love adventures? Feel the adrenaline pumping as you make those twists and turns with the curving sands. </p>
-                        <a href="#" class="button popi">Book Now</a>
-                    </div>
-                </div>
-                <div class="mission-vision">
-                    <div style="text-align: center;">
-                        <h2 class="we__are">Dune Buggy</h2>
-                        <p class="hjk">
-                            Do you love adventures? Feel the adrenaline pumping as you make those twists and turns with the curving sands. Ride solo into the open desert for the experience of a lifetime. 
-                        </p>
-                    </div>
-                </div> -->
-                
-                <!-- second -->
-                <!-- third -->
-                <!-- <div class="why-us-content">
-                    <div style="text-align: center;">
-                        <h2 class="we__are">Raptor</h2>
 
-                        <p class="hjk">
-                            One of Dubai's unique offerings is the desert activities. And none is more adventerous than riding the sand dunes on a self-drive Quad Bike. Up the energy quotient on this trip with a 1 hour Quad Bike activity. 
-                        </p>
-                    </div>
-                </div>
-                <div class="rf__card">
-                  
-                    <img src="{{asset('client/img/home_page/Qbike_1seater.png')}}" class="abt__img" />
-                    <div class="rf__card__sub">
-                        <h2 class="cr__hd">1 SEATER QUAD BIKE</h2>
-                        <p class="cr__p">Ride solo on a self-drive quad bike into the open desert and feel the adrenaline pumping.All our riders are instructed ahead of the activity by our expert guides.</p>
-                        <a href="#" class="button popi">Book Now</a>
-                    </div>
-                  
-                </div>
-
-                <div class="rf__card">
-                    <img src="{{asset('client/img/home_page/Qbike_2seater.png')}}" class="abt__img" />
-                    <div class="rf__card__sub">
-                        <h2 class="cr__hd">2 SEATER QUAD BIKE</h2>
-                        <p class="cr__p">Ask a friend to join you in this 2-seater open desert quad bike ride. Don't miss this thrilling ride in the desert. </p>
-                        <a href="#" class="button popi">Book Now</a>
-                    </div>
-                </div> -->
-              
-                <!-- third -->
-                  <!-- third section-->
-                <!-- <h3 style="padding-left: 30px;padding-bottom: 40px;font-size: 1.8rem;padding-top: 30px;">Dune Buggy</h3> -->
-                
-                <!-- <div class="rf__card">
-                    <img src="{{asset('client/img/home_page/raptor.png')}}" class="abt__img" />
-                    <div class="rf__card__sub">
-                        <h2 class="cr__hd">SINGLE SEATER RAPTOR</h2>
-                        <p class="cr__p">Are you ready to ride a 700CC Raptor across the golden sand dunes of Dubai? This is a unique opportunity indegenouss to the UAE.</p>
-                        <a href="#" class="button popi">Book Now</a>
-                    </div>
-                    
-                </div>
-                <div class="rf__card">
-                    <img src="{{asset('client/img/home_page/polarise_1seater.png')}}" class="abt__img" />
-                    <div class="rf__card__sub">
-                        <h2 class="cr__hd">POLARISE DUNE BUGGY</h2>
-                        <p class="cr__p">Do you love adventures? Feel the adrenaline pumping as you make those twists and turns with the curving sands. </p>
-                        <a href="#" class="button popi">Book Now</a>
-                    </div>
-                </div>
-                
-                <div class="mission-vision">
-                    <div style="text-align: center;">
-                        <h2 class="we__are">Desert Safari</h2>
-                        <p class="hjk">
-                            Do you love adventures? Feel the adrenaline pumping as you make those twists and turns with the curving sands. Ride solo into the open desert for the experience of a lifetime. 
-                        </p>
-                    </div>
-                </div> -->
                 
                 <!--third section -->
                 </div>

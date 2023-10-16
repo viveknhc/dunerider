@@ -1,7 +1,5 @@
-@include('client_layout.inner_header') 
+@include('client_layout.inner_header')
         <main class="main">
-           
-
         <section class="about section" id="about">
                 <div class="container">
                     <div class="qert" style="background: #000; padding-top: 0px;padding-bottom: 0px;">
@@ -84,13 +82,13 @@
 <p style="color: #fff; text-align: justify;" class="p__fhghh">DUNERIDE does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.</p>
                     </div>
                 </div>
-                
+
             </section>
-           
-            
-             
+
+
+
         </main>
 
-        @include('client_layout.inner_footer') 
+        @include('client_layout.inner_footer')
     </body>
 </html>

@@ -376,7 +376,7 @@
         <!-- content -->
 
         <footer class="footer">
-            © 2022 DesertHunt designed by Mentegoz.
+            © 2022 Duneride designed by Mentegoz.
         </footer>
 
     </div>

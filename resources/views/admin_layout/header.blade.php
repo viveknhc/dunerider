@@ -5,12 +5,12 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-        <title>DesertHunt Admin Dashboard</title>
+        <title>Duneride Admin Dashboard</title>
         <meta content="Admin Dashboard" name="description" />
         <meta content="Mannatthemes" name="author" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-        <link rel="shortcut icon" href="{{asset('admin/images/favicon.ico')}}">
+        <link rel="shortcut icon" href="{{asset('client/img/fav-desert.png')}}">
 
         <!--Morris Chart CSS -->
         <link rel="stylesheet" href="{{asset('admin/plugins/fullcalendar/vanillaCalendar.css')}}"/>
